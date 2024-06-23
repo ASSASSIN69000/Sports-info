@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/CSS/signup.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Sign Up</h1>
+        <p id="description">Thank you for joining our community</p>
+    </header>
+    <form action="" id="survey-form">
+        <fieldset>
+            <label id="name-label">Name <input id="first-name" name="first-name" type="text"
+                    placeholder="Enter your name" required /></label>
+            <label id="email-label">Email <input id="email" name="email" type="email" placeholder="Enter your Email"
+                    required /></label>
+            <label for="new-password">Password <input id="new-password" name="new-password" type="password"
+                    pattern="[a-z0-5]{8,}" placeholder="Create a new password" required /></label>
+            <label id="number-label">Age<input id="number" type="number" name="age" min="13" max="100" placeholder="Age"
+                    required /></label>
+        </fieldset>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+            <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I
+            accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+        <input type="submit" id="submit">
+    </form>
+</body>
+
+</html>

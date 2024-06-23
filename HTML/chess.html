@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess</title>
+    <link rel="stylesheet" href="/CSS/utilities.css" />
+    <link rel="stylesheet" href="/CSS/navbar.css" />
+    <link rel="stylesheet" href="/CSS/info.css" />
+    <link rel="stylesheet" href="/CSS/searchbar.css">
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/JavaScript/main.js"></script>
+    <script src="/JavaScript/searchbar.js"></script>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <!-- navbar starts here -->
+      <div class="navbar flex justify-between item-center">
+        <!-- navbar is divided into 3 parts logo, search bar, sports + login/signup  -->
+        <!-- logo-container -->
+        <div class="logo-container flex navbar-item">
+          <h1 class=""><a href="/HTML/index.html">Sports Info</a></h1>
+          <img
+            src="/Assets/Images/bars-solid.svg"
+            alt=""
+            class="collapse menu-icon"
+          />
+        </div>
+        <!-- search-bar-container -->
+        <div
+          class="search-bar-container flex-col item-center navbar-item collapsed"
+        >
+        <div class="searchBar flex">
+          <input
+            class="mx-auto"
+            type="search"
+            id="search-bar"
+            onkeyup="myFunction()"
+            placeholder="   search any sport here"
+          />
+          <button id="search-button"><img src="/Assets/Images/magnifying-glass-solid.svg" alt="search icon" class="search-icon"></button>
+        </div>
+          <ul class="drop-down-lists" id="search-list">
+            <li><a href="/HTML/athletics.html" class="drop-down-list-item search-list-item">Athletics</a></li>
+            <li><a href="/HTML/badminton.html" class="drop-down-list-item search-list-item">Badminton</a></li>
+            <li><a href="/HTML/billiards.html" class="drop-down-list-item search-list-item">Billiards</a></li>
+            <li><a href="/HTML/chess.html" class="drop-down-list-item search-list-item">Chess</a></li>
+            <li><a href="/HTML/football.html" class="drop-down-list-item search-list-item">Football</a></li>
+            <li><a href="/HTML/golf.html" class="drop-down-list-item search-list-item">Golf</a></li>
+            <li><a href="/HTML/judo.html" class="drop-down-list-item search-list-item">Judo</a></li>
+            <li><a href="/HTML/motorcycle.html" class="drop-down-list-item search-list-item">Motorcycle Racing</a></li>
+            <li><a href="/HTML/swimming.html" class="drop-down-list-item search-list-item">Swimming</a></li>
+            <li><a href="/HTML/tennis.html" class="drop-down-list-item search-list-item">Tennis</a></li>
+            <li><a href="/HTML/volley.html" class="drop-down-list-item search-list-item">Volleyball</a></li>
+          </ul>
+        </div>
+        <!-- options-container -->
+        <ul
+          class="flex navbar-item item-center collapsed drop-down-container"
+        >
+          <li class="drop-btn" id="sports">
+            Sports
+            <img
+              src="/Assets/Images/chevron-down-solid.svg"
+              alt="drop-down-logo"
+              class="drop-down-logo"
+            />
+            <ul class="drop-down-list txt-center item-center mx-auto" id="sports-catagories">
+              <li>
+                <a href="/HTML/athletics.html" class="drop-down-list-item">Athletics</a>
+              </li>
+              <li>
+                <a href="/HTML/badminton.html" class="drop-down-list-item">Badminton</a>
+              </li>
+              <li>
+                <a href="/HTML/billiards.html" class="drop-down-list-item">Billiards</a>
+              </li>
+              <li><a href="/HTML/chess.html" class="drop-down-list-item">Chess</a></li>
+              <li><a href="/HTML/football.html" class="drop-down-list-item">Football</a></li>
+              <li><a href="/HTML/golf.html" class="drop-down-list-item">Golf</a></li>
+              <li><a href="/HTML/judo.html" class="drop-down-list-item">Judo</a></li>
+              <li>
+                <a href="/HTML/motorcycle.html" class="drop-down-list-item"
+                  >Motorcycle Racing</a
+                >
+              </li>
+              <li><a href="/HTML/swimming.html" class="drop-down-list-item">Swimming</a></li>
+              <li><a href="/HTML/tennis.html" class="drop-down-list-item">Tennis</a></li>
+              <li>
+                <a href="/HTML/volley.html" class="drop-down-list-item">Volleyball</a>
+              </li>
+            </ul>
+          </li>
+          <li class="drop-btn" id="options">More
+            <img src="/Assets/Images/chevron-down-solid.svg" alt="down arrow" class="drop-down-logo">
+            <ul class="drop-down-list" id="options-catagories">
+              <li><a href="/HTML/contact.html" class="drop-down-list-item">Contact us</a></li>
+              <li><a href="/HTML/about.html" class="drop-down-list-item">About us</a></li>
+            </ul>
+          </li>
+          <li class="sign-up"><a href="/HTML/signup.html"  class="" target="_blank">Sign Up</a></li>
+        </ul>
+      </div>
+      <main class="txt-center">
+        <div class="main-paragraph-container">
+        <h1 class="main-heading">CHESS</h1>
+        <p class="intro-paragraph">Chess is a strategy board game for two players that is played on a checkered board. With sixteen pieces at the beginning of the game, each player can move and use them to capture opposing pieces by specific regulations. The object is to put the opponent's king under a direct attack from which escape is impossible (checkmate).</p>
+      </div>
+      <!--Insert slider/carousal here-->
+        <div class="paragraph-container">
+          <h3 class="sub-heading">History:</h3>
+          <p class="paragraph">Texts referring to the origins of chess date from the beginning of the seventh century. Three are written in Pahlavi (Middle Persian) and one, the Harshacharita, is in Sanskrit. One of these texts, the Chatrang-namak, represents one of the earliest written accounts of chess. The narrator Bozorgmehr explains that Chatrang, "Chess" in Pahlavi, was introduced to Persia by 'Dewasarm, a great ruler of India' during the reign of Khosrow.
+            The oldest known chess manual was in Arabic and dates to about 840, written by al-Adli ar-Rumi (800–870), a renowned Arab chess player, titled Kitab ash-shatranj (The Book of Chess). This is a lost manuscript but is referenced in later works. Here also, al-Adli attributes the origins of Persian chess to India, along with the eighth-century collection of fables Kalīla wa-Dimna.By the 20th century, a substantial consensus developed regarding chess's origins in northwest India in the early seventh century. More recently, this consensus has been the subject of further scrutiny.
+            </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Rules of the game:</h3>
+          <p class="paragraph">There is a great diversity of styles in chess sets. The Staunton pattern is the most common and is usually required for competition. Chess pieces are divided into two sets, usually light and dark colored, referred to as white and black, regardless of the actual color or design. The terms White and Black designate the players in each set, respectively. Sixteen pieces total one king, one queen, two rooks, two bishops, two knights, and eight pawns make up each set.
+            A square board with eight rows (referred to as ranks) and eight columns (referred to as files) is used to play the game. The 64 squares are known as light and dark squares by convention; typical chessboard colors are white and brown or white and green. The 64 squares alternate in color. The diagram and picture depict how the components are arranged. Therefore, the pieces on White's first rank are arranged as follows, going from left to right: rook, knight, bishop, queen, king, bishop, knight, and rook. There are eight pawns on the second rank.  Black's position mirrors White's, with an equivalent piece on the same file. The board is placed with a light square at the right-hand corner nearest to each player. The correct position of the light square may be remembered by the phrase "light on right", while the correct positions of the king and queen may be remembered by the phrase "queen on her color" (i.e. the white queen begins on a light square and the black queen on a dark square).
+            </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Players of the game:</h3>
+          <p class="paragraph">In a game of chess, two people can play simultaneously. With one player managing the white pieces and the other the black pieces, chess is essentially a two-person game. To outmaneuver the opposition and eventually checkmate the opposing king, each player takes turns making moves. Even though chess can be played competitively or alone, two players are always pitted against one another. 
+            Here are some popular players of chess:
+            <ul class="list-container">
+          <li class="list"><a href="https://en.wikipedia.org/wiki/Bobby_Fischer" target="_blank">Bobby Fischer</a></li>
+          <li class="list"><a href="https://en.wikipedia.org/wiki/Mikhail_Tal" target="_blank">Mikhail Tal</a></li>
+          <li class="list"><a href="https://en.wikipedia.org/wiki/Magnus_Carlsen" target="_blank">Magnus Carlsen</a></li>
+          <li class="list"><a href="https://en.wikipedia.org/wiki/Paul_Morphy" target="_blank">Paul Morphy</a></li>
+          <li class="list"><a href="https://en.wikipedia.org/wiki/Garry_Kasparov" target="_blank">Garry Kasparov</a></li>
+          <li class="list"><a href="https://en.wikipedia.org/wiki/Viswanathan_Anand" target="_blank">Viswanathan Anand</a></li>
+        </ul>
+        </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Strategy of the game:</h3>
+          <p class="paragraph">The assessment of chess positions, as well as the establishment of objectives and long-term planning for future play, are all aspects of chess strategy. Players have to consider several things when evaluating, including the worth of the pieces on the board, centralization, and control of the center, the pawn structure, the safety of the king, and the control of important squares or groups of squares (like diagonals, open files, and dark or light squares). Calculating the total worth of the pieces on both sides is the simplest method of assessing a position. Experience determines the point values used for this purpose; typically, pawns are valued at one point, knights and bishops at roughly three points apiece, and rooks at roughly five points (the difference in value exchange between a Rook and a bishop or knight, and queens have roughly nine points. Given that its checkmate ends the game, the king is worth more than all the other pieces put together. However, practically speaking, as a fighting piece in the endgame, the king is typically more powerful than a bishop or knight but less powerful than a rook.
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Popular tournament:</h3>
+          <p class="paragraph">The intensity and drama of the 1972 "Match of the Century," Bobby Fischer vs. Boris Spassky chess encounter enthralled people worldwide. In Reykjavik, Iceland, the legendary American chess prodigy Bobby Fischer squared up against the Soviet Union's Boris Spassky, the current World Chess Champion. The match was more than simply a race for the world championship; it was a chessboard clash between Cold War adversaries. Fischer's fierce perseverance and unparalleled mastery of chess tactics collided with Spassky's tremendous abilities and background. Because of Fischer's strange behavior and his demands for altered match circumstances, the tension increased. Despite the controversy, Fischer's outstanding performance won the World Chess Championship, becoming him the first American to do so in more than a century. The encounter is still regarded as one of the most illustrious and unforgettable moments in chess history. It made a lasting impression on the game.
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">How many countries play the game:</h3>
+          <p class="paragraph">Worldwide, chess is played in almost every nation. It's one of the most played games by all age groups and is popular in all continents and civilizations. People of various ages and backgrounds participate in the strategic and cerebral difficulties that chess offers, whether they are in busy cities or isolated villages. Whether it's in educational institutions, social clubs, competitions, or relaxed environments, players from all over the world unite to enjoy the game's eternal appeal. Because of this, it's challenging to pinpoint the exact number of nations that play chess, but the game's broad appeal and participation in international tournaments highlight its ubiquity and global impact.
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Important Facts:</h3>
+          <p class="paragraph">Chess is a timeless game steeped in history and strategy, captivating players around the world for centuries. Originating in ancient India as chaturanga, it evolved and spread across continents, reaching Persia, the Arab world, and eventually Europe. The modern chessboard consists of 64 squares and 32 pieces, each with its unique movements and roles. Despite its simple objective of checkmating the opponent's king, chess offers a depth of complexity that challenges players of all levels.
+            <br>
+            Throughout history, chess has transcended cultural boundaries, bringing people together through a shared love of the game. From casual players enjoying matches in parks to grandmasters competing in high-stakes tournaments, chess enthusiasts come from diverse backgrounds and ages. The allure of chess lies in its accessibility and the mental stimulation it provides.
+            <br>
+            Legendary figures have left their mark on the chess world, from the Romantic era champion Paul Morphy to strategic masters like Wilhelm Steinitz. Icons such as Bobby Fischer, Garry Kasparov, and Magnus Carlsen ha further elevated the game, pushing its boundaries and inspiring future generations of players.
+            Chess has also made its mark on culture, appearing in literature, art, and cinema. Works like Lewis Carroll's "Through the Looking-Glass" and Stefan Zweig's "The Royal Game" showcase its enduring influence on creativity and imagination.
+            <br>
+            In the modern age, technology has revolutionized chess, allowing players to connect and compete online. Chess engines and computer analysis have reshaped the game, providing new insights and strategies for players to explore.
+            Despite its evolution, chess remains a symbol of human intellect and ingenuity. Its universal appeal speaks to the human desire for challenge and mastery. Whether playing for fun or in competitive arenas, chess continues to enrich lives and inspire minds worldwide.
+            </p>
+        </div>
+        <!-- <div class="paragraph-container">
+          <h3 class="sub-heading"></h3>
+          <p class="paragraph"></p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading"></h3>
+          <p class="paragraph"></p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading"></h3>
+          <p class="paragraph"></p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading"></h3>
+          <p class="paragraph"></p>
+        </div> -->
+      </main>
+
+
+<footer>Copyright&copy; Sportsinfo.com | All rights reserved</footer>
+</div>
+</body>
+</html>

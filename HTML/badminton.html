@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badminton</title>
+    <link rel="stylesheet" href="/CSS/utilities.css" />
+    <link rel="stylesheet" href="/CSS/navbar.css" />
+    <link rel="stylesheet" href="/CSS/info.css" />
+    <link rel="stylesheet" href="/CSS/searchbar.css">
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/JavaScript/main.js"></script>
+    <script src="/JavaScript/searchbar.js"></script>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <!-- navbar starts here -->
+      <div class="navbar flex justify-between item-center">
+        <!-- navbar is divided into 3 parts logo, search bar, sports + login/signup  -->
+        <!-- logo-container -->
+        <div class="logo-container flex navbar-item">
+          <h1 class=""><a href="/HTML/index.html">Sports Info</a></h1>
+          <img
+            src="/Assets/Images/bars-solid.svg"
+            alt=""
+            class="collapse menu-icon"
+          />
+        </div>
+        <!-- search-bar-container -->
+        <div
+          class="search-bar-container flex-col item-center navbar-item collapsed"
+        >
+        <div class="searchBar flex">
+          <input
+            class="mx-auto"
+            type="search"
+            id="search-bar"
+            onkeyup="myFunction()"
+            placeholder="   search any sport here"
+          />
+          <button id="search-button"><img src="/Assets/Images/magnifying-glass-solid.svg" alt="search icon" class="search-icon"></button>
+        </div>
+          <ul class="drop-down-lists" id="search-list">
+            <li><a href="/HTML/athletics.html" class="drop-down-list-item search-list-item">Athletics</a></li>
+            <li><a href="/HTML/badminton.html" class="drop-down-list-item search-list-item">Badminton</a></li>
+            <li><a href="/HTML/billiards.html" class="drop-down-list-item search-list-item">Billiards</a></li>
+            <li><a href="/HTML/chess.html" class="drop-down-list-item search-list-item">Chess</a></li>
+            <li><a href="/HTML/football.html" class="drop-down-list-item search-list-item">Football</a></li>
+            <li><a href="/HTML/golf.html" class="drop-down-list-item search-list-item">Golf</a></li>
+            <li><a href="/HTML/judo.html" class="drop-down-list-item search-list-item">Judo</a></li>
+            <li><a href="/HTML/motorcycle.html" class="drop-down-list-item search-list-item">Motorcycle Racing</a></li>
+            <li><a href="/HTML/swimming.html" class="drop-down-list-item search-list-item">Swimming</a></li>
+            <li><a href="/HTML/tennis.html" class="drop-down-list-item search-list-item">Tennis</a></li>
+            <li><a href="/HTML/volley.html" class="drop-down-list-item search-list-item">Volleyball</a></li>
+          </ul>
+        </div>
+        <!-- options-container -->
+        <ul
+          class="flex navbar-item item-center collapsed drop-down-container"
+        >
+          <li class="drop-btn" id="sports">
+            Sports
+            <img
+              src="/Assets/Images/chevron-down-solid.svg"
+              alt="drop-down-logo"
+              class="drop-down-logo"
+            />
+            <ul class="drop-down-list txt-center item-center mx-auto" id="sports-catagories">
+              <li>
+                <a href="/HTML/athletics.html" class="drop-down-list-item">Athletics</a>
+              </li>
+              <li>
+                <a href="/HTML/badminton.html" class="drop-down-list-item">Badminton</a>
+              </li>
+              <li>
+                <a href="/HTML/billiards.html" class="drop-down-list-item">Billiards</a>
+              </li>
+              <li><a href="/HTML/chess.html" class="drop-down-list-item">Chess</a></li>
+              <li><a href="/HTML/football.html" class="drop-down-list-item">Football</a></li>
+              <li><a href="/HTML/golf.html" class="drop-down-list-item">Golf</a></li>
+              <li><a href="/HTML/judo.html" class="drop-down-list-item">Judo</a></li>
+              <li>
+                <a href="/HTML/motorcycle.html" class="drop-down-list-item"
+                  >Motorcycle Racing</a
+                >
+              </li>
+              <li><a href="/HTML/swimming.html" class="drop-down-list-item">Swimming</a></li>
+              <li><a href="/HTML/tennis.html" class="drop-down-list-item">Tennis</a></li>
+              <li>
+                <a href="/HTML/volley.html" class="drop-down-list-item">Volleyball</a>
+              </li>
+            </ul>
+          </li>
+          <li class="drop-btn" id="options">More
+            <img src="/Assets/Images/chevron-down-solid.svg" alt="down arrow" class="drop-down-logo">
+            <ul class="drop-down-list" id="options-catagories">
+              <li><a href="/HTML/contact.html" class="drop-down-list-item">Contact us</a></li>
+              <li><a href="/HTML/about.html" class="drop-down-list-item">About us</a></li>
+            </ul>
+          </li>
+          <li class="sign-up"><a href="/HTML/signup.html"  class="" target="_blank">Sign Up</a></li>
+        </ul>
+      </div>
+      <main class="txt-center">
+        <div class="main-paragraph-container">
+        <h1 class="main-heading">BADMINTON</h1>
+        <p class="intro-paragraph">Badminton is a dynamic and exhilarating sport that engages players of all ages and skill levels. With its origins tracing back to ancient civilizations, badminton has evolved into a popular recreational and competitive activity worldwide. Played on a rectangular court divided by a net, the game requires agility, precision, and strategic thinking. Players use lightweight rackets to hit a shuttlecock back and forth over the net, aiming to outmaneuver their opponents and score points. Badminton combines elements of speed, power, and finesse, making it both physically demanding and mentally stimulating. Whether played casually with friends or in organized tournaments, badminton fosters camaraderie, sportsmanship, and a passion for healthy competition.
+        </p>
+      </div>
+      <!--Insert slider/carousal here-->
+        <div class="paragraph-container">
+          <h3 class="sub-heading">History:</h3>
+          <p class="paragraph">The history of badminton dates back centuries, with its origins rooted in ancient civilizations. The game's earliest form is believed to have been played in ancient Greece, China, and India, where a shuttlecock was hit with the hand. However, the modern version of badminton as we know it today originated in mid-19th century British India, where it was known as "Poona" or "Poonah" after the city where it was particularly popular. British army officers stationed in India were introduced to the game and brought it back to England in the late 19th century.
+            <br>
+            The rules were formalized, and the sport gained popularity, eventually spreading globally. The Badminton Association of England was established in 1893, and the first set of standardized rules was published. Badminton was included as a demonstration sport in the 1972 Olympic Games and became an official Olympic sport in 1992. Since then, it has grown into one of the most widely played and watched sports around the world, with professional tournaments and leagues drawing large audiences and top athletes from various countries.
+            </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Rules of the game:</h3>
+          <p class="paragraph">The rules of badminton are relatively straightforward, designed to ensure fair play and maintain the flow of the game. Here's a brief overview:
+            <ul class="list-container">
+              <li class="list">
+                <h4>Scoring:</h4>
+                <p>Badminton matches are typically played in sets, with each set played to 21 points. Players score a point by successfully hitting the shuttlecock onto the opponent's side of the court, within the boundaries.</p>
+              </li>
+              <li class="list">
+                <h4>Serve:</h4>
+                <p>The game begins with a serve. The server must hit the shuttlecock from below the waist and diagonally across the net to the opponent's service court. The serve must be underhand, and the shuttlecock must be struck below the server's waist.</p>
+              </li>
+              <li class="list">
+                <h4>Rally:</h4>
+                <p>After the serve, players take turns hitting the shuttlecock back and forth over the net. The shuttlecock must pass over the net and land within the boundaries of the opponent's court.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Faults</h4>
+                <p>Various faults can occur during a badminton match, including:
+                  <ul class="list-within-list-container">
+                    <li class="list-within-list">Failure to hit the shuttlecock over the net.</li>
+                    <li class="list-within-list">Hitting the shuttlecock out of bounds.</li>
+                    <li class="list-within-list">Touching the net with any part of the body or racket.</li>
+                    <li class="list-within-list">Making contact with the shuttlecock before it crosses the net.</li>
+                    <li class="list-within-list">Double hits, where a player hits the shuttlecock twice in succession.</li>
+                    <li class="list-within-list">Serving or receiving from the wrong court.</li>
+                  </ul>
+                </p>
+              </li>
+              <li class="list">
+                <h4>Scoring System:</h4>
+                <p>In official matches, players can score points only when they are serving. If the score reaches 20-20, the game continues until one player gains a two-point advantage to win the set.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Service Rotation:</h4>
+                <p>In doubles matches, the service rotates between the two teams after each point is scored. The receiving team must decide which player will receive the serve.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Let:</h4>
+                <p>A let is called when a rally is interrupted by unforeseen circumstances, such as a shuttlecock hitting the roof or a line judge's decision being overruled.</p>
+              </li>
+            </ul>
+            <br>
+          <p class="paragraph">
+            These are the fundamental rules of badminton, but there are more detailed regulations governing aspects like court dimensions, equipment specifications, and conduct during matches, which ensure fair play and competitive integrity.
+          </p>
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Format of the game:</h3>
+          <p class="paragraph">Badminton can be played in various formats, including singles, doubles, and mixed doubles. The number of players required depends on the format:
+            <ul class="list-container">
+          <li class="list">
+            <h4>Singles:</h4>
+            <p>In singles badminton, only two players are required—one on each side of the court.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Doubles:</h4>
+            <p>Doubles badminton requires four players—two players on each team. The game is played with two players on each side of the court, and they work together to outmaneuver their opponents.</p>
+          </li>
+          <li class="list">
+            <h4>Mixed Doubles:</h4>
+            <p>Mixed doubles badminton involves teams consisting of one male and one female player on each side. Similar to regular doubles, there are two players on each team, totaling four players on the court.</p>
+          </li>
+        </ul>
+        <p class="paragraph">
+        Therefore, to play badminton, you need at least one opponent for singles and at least three other players for doubles or mixed doubles. However, badminton can also be played casually with more players rotating in and out of matches or during training sessions.
+      </p>
+        </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Popular Players:</h3>
+          <p class="paragraph">Here are seven popular badminton players known worldwide:
+            <ul class="list-container">
+              <li class="list">
+                <h4><a href="https://en.wikipedia.org/wiki/Lin_Dan" target="_blank">Lin Dan (China):</a></h4>
+                <p>Lin Dan, often referred to as "Super Dan," is one of the most accomplished badminton players in history, winning two Olympic gold medals and multiple World Championships.</p>
+              </li>
+              <li class="list">
+                <h4><a href="https://en.wikipedia.org/wiki/Lee_Chong_Wei" target="_blank">Lee Chong Wei (Malaysia):</a></h4>
+                <p>Lee Chong Wei is a legendary Malaysian badminton player who has held the world No. 1 ranking for an extended period. He is known for his remarkable speed and agility on the court.</p>
+              </li>
+              <li class="list">
+                <h4><a href="https://en.wikipedia.org/wiki/Chen_Long" target="_blank">Chen Long (China):</a></h4>
+                <p>Chen Long is another prominent Chinese badminton player who has won numerous titles, including Olympic gold and World Championships.</p>
+              </li>
+              <li class="list">
+                <h4><a href="https://en.wikipedia.org/wiki/Tai_Tzu-ying" target="_blank">Tai Tzu-ying (Chinese Taipei):</a></h4>
+                <p>Tai Tzu-ying is a highly skilled women's singles player from Chinese Taipei. She is known for her exceptional agility, deception, and creativity in her style of play.</p>
+              </li>
+              <li class="list">
+                <h4><a href="https://en.wikipedia.org/wiki/Kento_Momota" target="_blank">Kento Momota (Japan):</a></h4>
+                <p>Kento Momota is a Japanese badminton player who has risen to prominence with his powerful playing style. He has won multiple BWF World Tour titles and is considered one of the best men's singles players in recent years.</p>
+              </li>
+              <li class="list">
+                <h4><a href="https://en.wikipedia.org/wiki/Carolina_Mar%C3%ADn" target="_blank">Carolina Marin (Spain):</a></h4>
+                <p>Carolina Marin is a Spanish badminton player known for her aggressive playing style and powerful smashes. She has won multiple World Championships and an Olympic gold medal.</p>
+              </li>
+              <li class="list">
+                <h4><a href="https://en.wikipedia.org/wiki/P._V._Sindhu" target="_blank">PV Sindhu (India):</a></h4>
+                <p>PV Sindhu is an Indian badminton player who has achieved significant success on the international stage, including winning Olympic silver and World Championship gold medals.</p>
+              </li>
+            </ul>
+            <p class="paragraph">
+              These players have not only achieved great success in their careers but have also contributed to the popularity and growth of badminton worldwide.
+            </p>
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Strategy of the game:</h3>
+          <p class="paragraph">The strategy in badminton involves a combination of tactics, skillful shot selection, and understanding your opponent's weaknesses. Here are some key strategies players often employ:
+            <ul class="list-container">
+              <li class="list">
+                <h4>Placement of Shots:</h4>
+                <p>Players aim to place their shots precisely to exploit their opponent's weaknesses and create openings. This involves hitting the shuttlecock to the corners of the court, forcing opponents to move quickly and cover more ground.</p>
+              </li>
+              <li class="list">
+                <h4>Variation in Shots:</h4>
+                <p>Players use a variety of shots, including clears, smashes, drops, and drives, to keep their opponents guessing and off-balance. Mixing up shot selection prevents predictability and makes it harder for opponents to anticipate the next move.</p>
+              </li>
+              <li class="list">
+                <h4>Footwork:</h4>
+                <p>Good footwork is essential in badminton. Players strive to move quickly and efficiently around the court to reach the shuttlecock in time and maintain optimal positioning for their shots.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Deception:</h4>
+                <p>Deceptive shots, such as disguised drops or smashes, are used to trick opponents and create opportunities to score points. Players use subtle changes in racket angle and body movement to disguise their intentions and catch opponents off guard.</p>
+              </li>
+              <li class="list">
+                <h4>Exploiting Weaknesses:</h4>
+                <p>Players analyze their opponent's strengths and weaknesses to develop a game plan. They may target an opponent's weaker side or exploit vulnerabilities in their movement or shot selection.</p>
+              </li>
+              <li class="list">
+                <h4>Maintaining Pressure:</h4>
+                <p>Consistently applying pressure on opponents through aggressive shot-making and relentless rallies can wear them down mentally and physically, leading to errors and scoring opportunities.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Adapting to Conditions:</h4>
+                <p>Players must adapt their strategy to factors such as court conditions, the playing style of opponents, and their physical condition. Flexibility and the ability to adjust tactics mid-game are crucial for success.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Maintaining Focus and Composure:</h4>
+                <p>Mental toughness is vital in badminton. Players must stay focused, maintain composure under pressure, and stay resilient in the face of setbacks to perform at their best.</p>
+              </li>
+            </ul>
+            <p class="paragraph">By employing these strategies effectively, players can enhance their chances of success and outmaneuver their opponents on the badminton court.
+            </p>
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Popular tournament:</h3>
+          <p class="paragraph">Several badminton tournaments are highly popular and attract attention from fans, players, and media worldwide. Here are some of the most renowned badminton tournaments:
+            <ul class="list-container">
+              <li class="list">
+                <h4>Olympic Games:</h4>
+                <p>Badminton has been a part of the Olympic Games since 1992. The Olympic badminton tournament is held every four years and features the world's top players competing for gold, silver, and bronze medals.</p>
+              </li>
+              <li class="list">
+                <h4>BWF World Championships:</h4>
+                <p>Organized by the Badminton World Federation (BWF), the World Championships is an annual event that showcases the best players from around the globe competing for the title of world champion in various categories.
+                </p>
+              </li>
+              <li class="list">
+                <h4>All England Open Badminton Championships:</h4>
+                <p>The All England Open is one of the oldest and most prestigious badminton tournaments in the world. Held annually in Birmingham, England, it is considered one of the most coveted titles in badminton.</p>
+              </li>
+              <li class="list">
+                <h4>BWF World Tour Finals:</h4>
+                <p>The BWF World Tour Finals is the season-ending tournament of the BWF World Tour. It features the top eight players or pairs in each category who have accumulated the most points throughout the tour season.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Thomas Cup (Men's Team Event) and Uber Cup (Women's Team Event):</h4>
+                <p>The Thomas Cup and Uber Cup are prestigious team events organized by the BWF. National teams from around the world compete for the honor of being crowned the best men's and women's teams, respectively.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Asian Games:</h4>
+                <p>Badminton is a prominent sport in the Asian Games, which is held every four years. The tournament features top players from Asian countries competing for medals in various categories.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Yonex All England Open:</h4>
+                <p>Apart from the All England Open Championships, the Yonex All England Open is a significant tournament on the BWF World Tour. It attracts top players and offers substantial prize money.
+                </p>
+              </li>
+            </ul>
+            <p class="paragraph">
+              These tournaments not only provide an opportunity for players to showcase their skills on a global stage but also serve as platforms for promoting the sport and inspiring future generations of badminton players.
+            </p>
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">How many countries play the game:</h3>
+          <p class="paragraph">Badminton is played in numerous countries around the world, making it one of the most popular racket sports globally. While it's challenging to provide an exact number of countries where badminton is played, it is safe to say that the sport has a significant presence in both developed and developing nations across all continents.
+            <br>
+            Some countries, particularly in Asia, such as China, Indonesia, Malaysia, India, Japan, and South Korea, have strong badminton traditions and boast large numbers of players, both at the grassroots and professional levels. These countries often dominate international competitions and produce world-class players.
+            <br>
+            In addition to Asian countries, badminton is popular in Europe, with nations like Denmark, England, Spain, and Russia having notable badminton programs and producing top players.
+            <br>
+            
+            Moreover, badminton is played in countries across Africa, the Americas, and Oceania, where it continues to grow in popularity. National and international tournaments, coaching programs, and grassroots initiatives have helped promote the sport and expand its reach to new regions and communities.
+            <br>
+            
+            Overall, badminton's universal appeal and accessibility have contributed to its widespread adoption in countries around the world, making it a truly global sport.
+            </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Important facts:</h3>
+          <p class="paragraph">
+            <ul class="list-container">
+              <li class="list">
+                <h4>Origins:</h4>
+                <p>Badminton has ancient origins, with roots traced back to ancient civilizations in Greece, China, and India. The modern version of the sport, however, originated in British India in the mid-19th century.</p>
+              </li>
+              <li class="list">
+                <h4>Shuttlecock:</h4>
+                <p>The shuttlecock, also known as a birdie, is a crucial component of badminton. It is made of feathers (usually goose feathers) or synthetic materials and has a cork base. The shuttlecock's unique aerodynamics contribute to the fast-paced nature of the game.</p>
+              </li>
+              <li class="list">
+                <h4>Fastest Racket Sport:</h4>
+                <p>Badminton is considered the fastest racket sport in the world. The shuttlecock can reach speeds exceeding 200 miles per hour (322 km/h) during a powerful smash.</p>
+              </li>
+              <li class="list">
+                <h4>Olympic Sport:</h4>
+                <p>Badminton became an Olympic sport in 1992 at the Barcelona Summer Olympics. It features events for men's and women's singles, men's and women's doubles, and mixed doubles.</p>
+              </li>
+              <li class="list">
+                <h4>BWF:</h4>
+                <p>The Badminton World Federation (BWF) is the international governing body for the sport. It oversees global competitions, sets rules and regulations, and promotes the growth and development of badminton.</p>
+              </li>
+              <li class="list">
+                <h4>Scoring System:</h4>
+                <p>Badminton uses a rally scoring system, meaning a point is scored on every serve, whether the serving team wins the rally or not. Matches are typically played to the best of three games, with each game played to 21 points (or 15 points in doubles at the Olympic level).
+                </p>
+              </li>
+              <li class="list">
+                <h4>Record-Holders:</h4>
+                <p>Chinese players, particularly Lin Dan and Zhang Ning, have achieved remarkable success and are considered among the greatest badminton players in history. Lin Dan is a two-time Olympic gold medalist and five-time World Champion, while Zhang Ning is a two-time Olympic gold medalist and three-time World Champion.</p>
+              </li>
+              <li class="list">
+                <h4>All England Open:</h4>
+                <p>The All England Open Badminton Championships is one of the oldest and most prestigious badminton tournaments in the world. It has been held annually since 1899 in Birmingham, England.</p>
+              </li>
+              <li class="list">
+                <h4>Badminton in Schools:</h4>
+                <p>Badminton is widely played in schools around the world, contributing to its popularity among young athletes. It is considered a versatile and accessible sport suitable for players of all ages and skill levels.</p>
+              </li>
+              <li class="list">
+                <h4>Paralympic Sport:</h4>
+                <p>Badminton is also played at the Paralympic Games, featuring events for athletes with physical disabilities. The sport provides opportunities for individuals with impairments to showcase their skills at the highest level of competition.</p>
+              </li>
+            </ul>
+            <p class="paragraph">
+              These facts highlight the rich history, global appeal, and exciting dynamics of badminton as a sport.
+
+            </p>
+          </p>
+        </div>
+      </main>
+
+
+<footer>Copyright&copy; Sportsinfo.com | All rights reserved</footer>
+</div>
+</body>
+</html>

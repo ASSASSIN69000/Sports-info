@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golf</title>
+    <link rel="stylesheet" href="/CSS/utilities.css" />
+    <link rel="stylesheet" href="/CSS/navbar.css" />
+    <link rel="stylesheet" href="/CSS/info.css" />
+    <link rel="stylesheet" href="/CSS/searchbar.css">
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/JavaScript/main.js"></script>
+    <script src="/JavaScript/searchbar.js"></script>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <!-- navbar starts here -->
+      <div class="navbar flex justify-between item-center">
+        <!-- navbar is divided into 3 parts logo, search bar, sports + login/signup  -->
+        <!-- logo-container -->
+        <div class="logo-container flex navbar-item">
+          <h1 class=""><a href="/HTML/index.html">Sports Info</a></h1>
+          <img
+            src="/Assets/Images/bars-solid.svg"
+            alt=""
+            class="collapse menu-icon"
+          />
+        </div>
+        <!-- search-bar-container -->
+        <div
+          class="search-bar-container flex-col item-center navbar-item collapsed"
+        >
+        <div class="searchBar flex">
+          <input
+            class="mx-auto"
+            type="search"
+            id="search-bar"
+            onkeyup="myFunction()"
+            placeholder="   search any sport here"
+          />
+          <button id="search-button"><img src="/Assets/Images/magnifying-glass-solid.svg" alt="search icon" class="search-icon"></button>
+        </div>
+          <ul class="drop-down-lists" id="search-list">
+            <li><a href="/HTML/athletics.html" class="drop-down-list-item search-list-item">Athletics</a></li>
+            <li><a href="/HTML/badminton.html" class="drop-down-list-item search-list-item">Badminton</a></li>
+            <li><a href="/HTML/billiards.html" class="drop-down-list-item search-list-item">Billiards</a></li>
+            <li><a href="/HTML/chess.html" class="drop-down-list-item search-list-item">Chess</a></li>
+            <li><a href="/HTML/football.html" class="drop-down-list-item search-list-item">Football</a></li>
+            <li><a href="/HTML/golf.html" class="drop-down-list-item search-list-item">Golf</a></li>
+            <li><a href="/HTML/judo.html" class="drop-down-list-item search-list-item">Judo</a></li>
+            <li><a href="/HTML/motorcycle.html" class="drop-down-list-item search-list-item">Motorcycle Racing</a></li>
+            <li><a href="/HTML/swimming.html" class="drop-down-list-item search-list-item">Swimming</a></li>
+            <li><a href="/HTML/tennis.html" class="drop-down-list-item search-list-item">Tennis</a></li>
+            <li><a href="/HTML/volley.html" class="drop-down-list-item search-list-item">Volleyball</a></li>
+          </ul>
+        </div>
+        <!-- options-container -->
+        <ul
+          class="flex navbar-item item-center collapsed drop-down-container"
+        >
+          <li class="drop-btn" id="sports">
+            Sports
+            <img
+              src="/Assets/Images/chevron-down-solid.svg"
+              alt="drop-down-logo"
+              class="drop-down-logo"
+            />
+            <ul class="drop-down-list txt-center item-center mx-auto" id="sports-catagories">
+              <li>
+                <a href="/HTML/athletics.html" class="drop-down-list-item">Athletics</a>
+              </li>
+              <li>
+                <a href="/HTML/badminton.html" class="drop-down-list-item">Badminton</a>
+              </li>
+              <li>
+                <a href="/HTML/billiards.html" class="drop-down-list-item">Billiards</a>
+              </li>
+              <li><a href="/HTML/chess.html" class="drop-down-list-item">Chess</a></li>
+              <li><a href="/HTML/football.html" class="drop-down-list-item">Football</a></li>
+              <li><a href="/HTML/golf.html" class="drop-down-list-item">Golf</a></li>
+              <li><a href="/HTML/judo.html" class="drop-down-list-item">Judo</a></li>
+              <li>
+                <a href="/HTML/motorcycle.html" class="drop-down-list-item"
+                  >Motorcycle Racing</a
+                >
+              </li>
+              <li><a href="/HTML/swimming.html" class="drop-down-list-item">Swimming</a></li>
+              <li><a href="/HTML/tennis.html" class="drop-down-list-item">Tennis</a></li>
+              <li>
+                <a href="/HTML/volley.html" class="drop-down-list-item">Volleyball</a>
+              </li>
+            </ul>
+          </li>
+          <li class="drop-btn" id="options">More
+            <img src="/Assets/Images/chevron-down-solid.svg" alt="down arrow" class="drop-down-logo">
+            <ul class="drop-down-list" id="options-catagories">
+              <li><a href="/HTML/contact.html" class="drop-down-list-item">Contact us</a></li>
+              <li><a href="/HTML/about.html" class="drop-down-list-item">About us</a></li>
+            </ul>
+          </li>
+          <li class="sign-up"><a href="/HTML/signup.html"  class="" target="_blank">Sign Up</a></li>
+        </ul>
+      </div>
+      <main class="txt-center">
+        <div class="main-paragraph-container">
+        <h1 class="main-heading">Golf</h1>
+        <p class="intro-paragraph">Golf is a timeless sport that enthralls players and onlookers with its elegance and precision. It is frequently referred to as the gentleman's game. Played on expansive courses with immaculately tended greens, golf is a game of patience, skill, and strategy. Players must make their way through a sequence of holes, each with its own special set of obstacles to overcome, such as bunkers and water hazards. The goal is straightforward: use a club to hit a small ball into a far-off hole as few times as you can. However, underneath this seeming simplicity is a world of subtleties, where each shot takes exact planning and execution.
+        </p>
+      </div>
+      <!--Insert slider/carousal here-->
+        <div class="paragraph-container">
+          <h3 class="sub-heading">History:</h3>
+          <p class="paragraph">During the Middle Ages, stick-and-ball games from ancient Europe gave rise to golf in Scotland. It is most likely Dutch or Middle Dutch in origin, and the word "golf" originally meant a club or bat. By the fourteenth century, golf had become popular in Scotland, where linksland or natural coastal meadows were used for the game. The Old Course at St. Andrews is a famous golf location that was established in the early sixteenth century. Organizations like the Honourable Company of Edinburgh Golfers began to create uniform standards in the seventeenth century. The number of golf clubs and events, including the 1860 Open Championship, greatly increased throughout the 19th century.
+
+            </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Rules of the game:</h3>
+          <p class="paragraph">The rules of golf govern the play of the game, ensuring fair and consistent competition for players of all levels. Some key rules include:
+            <ul class="list-container">
+              <li class="list">
+                <h4>Teeing Off:</h4>
+                <p>Players begin each hole by teeing off, hitting their ball from a designated area called the tee box.</p>
+              </li>
+              <li class="list">
+                <h4>Order of Play:</h4>
+                <p>The player with the lowest score on the previous hole typically tees off first. After that, the player farthest from the hole plays next, and so on until all players have hit their shots.</p>
+              </li>
+              <li class="list">
+                <h4>Strokes:</h4>
+                <p>Players aim to get their ball into the hole in as few strokes as possible. Each stroke is counted, including penalty strokes for rule infractions.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Obstacles:</h4>
+                <p>Golf courses feature various obstacles, including bunkers, water hazards, and out-of-bounds areas. Players must navigate these obstacles while adhering to the rules.</p>
+              </li>
+              <li class="list">
+                <h4>Ball at Rest:</h4>
+                <p>Players must play the ball as it lies, without moving or altering it, except as permitted by the rules.</p>
+              </li>
+              <li class="list">
+                <h4>Ball in Motion:</h4>
+                <p>If a player's ball is in motion and is accidentally deflected or stopped by an outside influence, there are specific rules governing how to proceed.</p>
+              </li>
+              <li class="list">
+                <h4>Lost Ball:</h4>
+                <p>If a player cannot find their ball within a certain time frame (usually five minutes), they must take a penalty stroke and play another ball from the spot where the original ball was last played.</p>
+              </li>
+              <li class="list">
+                <h4>Penalty Areas and Drop Zones:</h4>
+                <p>If a player's ball is in a penalty area (formerly known as a water hazard), there are rules governing how to proceed, including options for taking penalty drops.</p>
+              </li>
+              <li class="list">
+                <h4>Putting and Holing Out:</h4>
+                <p>Once players reach the green, they use a putter to roll the ball into the hole. The hole is considered complete when the ball comes to rest in the hole.</p>
+              </li>
+              <li class="list">
+                <h4>Scoring:</h4>
+                <p>Players keep track of their scores for each hole and total them at the end of the round. The player with the lowest total score wins the game.</p>
+              </li>
+            </ul>
+            <p class="paragraph">
+              According to the official Rules of Golf, which were created by The R&A and the United States Golf Association (USGA), these are only a handful of the fundamental principles of golf. Golfers must become acquainted with the rules to guarantee equitable play and a fun game.
+            </p>
+            </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Players of the game:</h3>
+          <p class="paragraph">A round of golf can normally be played by one person; this is known as "playing solo." Nonetheless, two or more individuals typically play golf. During a normal round of golf, players usually get together in groups of two, three, or four and take turns hitting shots and moving through the course. This style makes it possible to engage in friendly rivalry, social contact, and game-sharing experiences. The minimum number of players needed to play golf, however, ultimately comes down to individual preferences and the particular regulations of the golf course or competition.
+            <br>
+            Here are five popular golfers who have left significant marks on the sport:
+            <ul class="list-container">
+          <li class="list">
+            <h4><a href="https://en.wikipedia.org/wiki/Tiger_Woods" target="_blank">Tiger Woods:</a></h4>
+            <p>Tiger Woods is widely considered one of the greatest golfers of all time. With his remarkable talent and charisma, Woods has won numerous major championships, including the Masters Tournament, the U.S. Open, The Open Championship, and the PGA Championship. His impact on the game of golf transcends sports, making him one of the most recognizable athletes globally.</p>
+          </li>
+          <li class="list">
+            <h4><a href="https://en.wikipedia.org/wiki/Jack_Nicklaus" target="_blank">Jack Nicklaus:</a></h4>
+            <p>Jack Nicklaus, also known as the "Golden Bear," is another iconic figure in golf history. With a record 18 major championship victories, including six Masters titles, Nicklaus has set numerous records that still stand today. His legacy extends beyond his playing career, as he continues to influence golf course design and the development of young golfers.</p>
+          </li>
+          <li class="list">
+            <h4><a href="https://en.wikipedia.org/wiki/Arnold_Palmer" target="_blank">Arnold Palmer:</a></h4>
+            <p>Arnold Palmer, affectionately known as "The King," was a beloved figure in golf and popularized the sport during the 1960s. With his swashbuckling style and magnetic personality, Palmer won seven major championships, including four Masters titles. He remains an enduring symbol of the game's spirit and camaraderie.</p>
+          </li>
+          <li class="list">
+            <h4><a href="https://en.wikipedia.org/wiki/Rory_McIlroy" target="_blank">Rory McIlroy:</a></h4>
+            <p>Rory McIlroy is one of the most talented and dynamic golfers of his generation. Hailing from Northern Ireland, McIlroy has won multiple major championships, including the U.S. Open, The Open Championship, and the PGA Championship. Known for his powerful swing and aggressive playing style, McIlroy continues to be a dominant force in professional golf.</p>
+          </li>
+          <li class="list">
+            <h4><a href="https://en.wikipedia.org/wiki/Phil_Mickelson" target="_blank">Phil Mickelson:</a></h4>
+            <p>Phil Mickelson, often referred to as "Lefty," is known for his remarkable short game and creative shot-making abilities. With five major championships to his name, including three Masters titles, Mickelson has cemented his legacy as one of the game's greats. His engaging personality and competitive spirit have endeared him to fans around the world.</p>
+          </li>
+        </ul>
+        </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Strategy of the game:</h3>
+          <p class="paragraph">
+            The technique of strategically choosing shots and navigating the course to get the lowest score possible is known as strategy in golf. Golfers carefully examine every hole, weighing elements including distance, hazards, wind direction, and course design to choose the optimal strategy. Players must select the right club for the shot by considering its needs and possible hazards. They choose cautious tactics on difficult holes and measure risks on easier ones after weighing the benefits of bold plays against the possible hazards of mishit shots. To score well, you need to have a great short game, which includes chipping and putting. This requires dexterity and skill when it comes to the greens. Golfers need mental toughness to stay focused, control their emotions, and be patient throughout the round. Pre-shot rituals assist players in preserving confidence and consistency in their swings, while intelligent course management guarantees the best possible placement for ensuing shots. Golfers aim to master the course's challenges and succeed on the fairways and greens by combining technique, strategy, and mental acuity.  
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Popular tournament:</h3>
+          <p class="paragraph">One of the most renowned and highly anticipated tournaments in the world of golf is The Masters Tournament. Held annually at Augusta National Golf Club in Augusta, Georgia, The Masters is the first of the four major championships in professional golf and is steeped in tradition and prestige. Known for its pristine course conditions, iconic green jacket awarded to the winner, and the breathtaking beauty of the Augusta National, The Masters captivates golf fans globally. Another prestigious major championship is the U.S. Open, which is conducted by the United States Golf Association (USGA) and rotates among various top-tier courses across the United States. The Open Championship, held in the United Kingdom, is the oldest of the four major championships and is staged on links-style courses, adding a unique challenge to the world's best golfers. The PGA Championship, organized by the Professional Golfers' Association of America, is the final major championship of the year and attracts top talent from around the globe. These tournaments represent the pinnacle of professional golf, drawing millions of viewers and showcasing the sport's rich history, fierce competition, and unwavering passion for the game.
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">How many countries play the game:</h3>
+          <p class="paragraph">Golf is played in countries all around the world, making it one of the most widely enjoyed sports globally. While it may have originated in Scotland, its popularity has spread to virtually every corner of the globe. According to recent estimates, golf is played in over 200 countries and territories worldwide. This includes countries with long-standing golf traditions, such as the United States, United Kingdom, Australia, and Japan, as well as emerging golf markets like China, South Korea, and India. The accessibility of golf courses, the growth of professional tours, and the increasing participation of recreational players have contributed to the game's widespread appeal across diverse cultures and regions.
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Important Facts:</h3>
+          <p class="paragraph">Here are some important facts about golf:
+            <ul class="list-container">
+              <li class="list">
+                <h4>Origin:</h4>
+                <p>Golf has roots dating back to 15th-century Scotland, where it was played on linkslands. The modern game evolved from various stick-and-ball games popular in Europe during the Middle Ages.</p>
+              </li>
+              <li class="list">
+                <h4>Major Championships:</h4>
+                <p>Golf features four major championships: The Masters, the U.S. Open, The Open Championship (often referred to as the British Open), and the PGA Championship. These tournaments attract the best golfers from around the world and are considered the most prestigious events in professional golf.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Professional Tours:</h4>
+                <p>Professional golfers compete on various tours around the world, including the PGA Tour (United States), European Tour, LPGA Tour (Ladies Professional Golf Association), and Asian Tour, among others. These tours host numerous events throughout the year, offering substantial prize money and world ranking points.</p>
+              </li>
+              <li class="list">
+                <h4>Rules and Etiquette:</h4>
+                <p>Golf is governed by a set of rules established by the United States Golf Association (USGA) and The R&A. These rules cover various aspects of gameplay, including equipment standards, course etiquette, and scoring procedures.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Handicap System:</h4>
+                <p>The handicap system allows golfers of different skill levels to compete fairly against each other. It is based on a player's scoring history and is used to adjust their net score to the course's difficulty.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Stroke Play and Match Play:</h4>
+                <p>Golf can be played in various formats, but the most common are stroke play and match play. In stroke play, the total number of strokes taken over the entire round determines the winner. In match play, players compete hole-by-hole, with the winner of each hole being the player or team with the lowest score on that hole.</p>
+              </li>
+              <li class="list">
+                <h4>Equipment:</h4>
+                <p>Golfers use a variety of clubs to navigate the course, including drivers, irons, wedges, and putters. The rules limit the number of clubs a player can carry to 14.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Golf Courses:</h4>
+                <p>Golf courses vary in design and layout, featuring diverse landscapes, hazards, and challenges. Courses can range from traditional parkland layouts to rugged links-style courses.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Growth and Accessibility:</h4>
+                <p>Golf is enjoyed by millions of people worldwide and is known for its inclusivity across age groups and skill levels. It offers opportunities for recreational play, social interaction, and competitive competition.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Traditions:</h4>
+                <p>Golf is steeped in tradition, with customs such as shaking hands after a round, removing hats during the national anthem, and adhering to a code of etiquette on the course. These traditions contribute to the sport's rich heritage and sense of camaraderie among players.
+                </p>
+              </li>
+            </ul>
+            </p>
+        </div>
+      </main>
+<footer>Copyright&copy; Sportsinfo.com | All rights reserved</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Judo</title>
+    <link rel="stylesheet" href="/CSS/utilities.css" />
+    <link rel="stylesheet" href="/CSS/navbar.css" />
+    <link rel="stylesheet" href="/CSS/info.css" />
+    <link rel="stylesheet" href="/CSS/searchbar.css">
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/JavaScript/main.js"></script>
+    <script src="/JavaScript/searchbar.js"></script>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <!-- navbar starts here -->
+      <div class="navbar flex justify-between item-center">
+        <!-- navbar is divided into 3 parts logo, search bar, sports + login/signup  -->
+        <!-- logo-container -->
+        <div class="logo-container flex navbar-item">
+          <h1 class=""><a href="/HTML/index.html">Sports Info</a></h1>
+          <img
+            src="/Assets/Images/bars-solid.svg"
+            alt=""
+            class="collapse menu-icon"
+          />
+        </div>
+        <!-- search-bar-container -->
+        <div
+          class="search-bar-container flex-col item-center navbar-item collapsed"
+        >
+        <div class="searchBar flex">
+          <input
+            class="mx-auto"
+            type="search"
+            id="search-bar"
+            onkeyup="myFunction()"
+            placeholder="   search any sport here"
+          />
+          <button id="search-button"><img src="/Assets/Images/magnifying-glass-solid.svg" alt="search icon" class="search-icon"></button>
+        </div>
+          <ul class="drop-down-lists" id="search-list">
+            <li><a href="/HTML/athletics.html" class="drop-down-list-item search-list-item">Athletics</a></li>
+            <li><a href="/HTML/badminton.html" class="drop-down-list-item search-list-item">Badminton</a></li>
+            <li><a href="/HTML/billiards.html" class="drop-down-list-item search-list-item">Billiards</a></li>
+            <li><a href="/HTML/chess.html" class="drop-down-list-item search-list-item">Chess</a></li>
+            <li><a href="/HTML/football.html" class="drop-down-list-item search-list-item">Football</a></li>
+            <li><a href="/HTML/golf.html" class="drop-down-list-item search-list-item">Golf</a></li>
+            <li><a href="/HTML/judo.html" class="drop-down-list-item search-list-item">Judo</a></li>
+            <li><a href="/HTML/motorcycle.html" class="drop-down-list-item search-list-item">Motorcycle Racing</a></li>
+            <li><a href="/HTML/swimming.html" class="drop-down-list-item search-list-item">Swimming</a></li>
+            <li><a href="/HTML/tennis.html" class="drop-down-list-item search-list-item">Tennis</a></li>
+            <li><a href="/HTML/volley.html" class="drop-down-list-item search-list-item">Volleyball</a></li>
+          </ul>
+        </div>
+        <!-- options-container -->
+        <ul
+          class="flex navbar-item item-center collapsed drop-down-container"
+        >
+          <li class="drop-btn" id="sports">
+            Sports
+            <img
+              src="/Assets/Images/chevron-down-solid.svg"
+              alt="drop-down-logo"
+              class="drop-down-logo"
+            />
+            <ul class="drop-down-list txt-center item-center mx-auto" id="sports-catagories">
+              <li>
+                <a href="/HTML/athletics.html" class="drop-down-list-item">Athletics</a>
+              </li>
+              <li>
+                <a href="/HTML/badminton.html" class="drop-down-list-item">Badminton</a>
+              </li>
+              <li>
+                <a href="/HTML/billiards.html" class="drop-down-list-item">Billiards</a>
+              </li>
+              <li><a href="/HTML/chess.html" class="drop-down-list-item">Chess</a></li>
+              <li><a href="/HTML/football.html" class="drop-down-list-item">Football</a></li>
+              <li><a href="/HTML/golf.html" class="drop-down-list-item">Golf</a></li>
+              <li><a href="/HTML/judo.html" class="drop-down-list-item">Judo</a></li>
+              <li>
+                <a href="/HTML/motorcycle.html" class="drop-down-list-item"
+                  >Motorcycle Racing</a
+                >
+              </li>
+              <li><a href="/HTML/swimming.html" class="drop-down-list-item">Swimming</a></li>
+              <li><a href="/HTML/tennis.html" class="drop-down-list-item">Tennis</a></li>
+              <li>
+                <a href="/HTML/volley.html" class="drop-down-list-item">Volleyball</a>
+              </li>
+            </ul>
+          </li>
+          <li class="drop-btn" id="options">More
+            <img src="/Assets/Images/chevron-down-solid.svg" alt="down arrow" class="drop-down-logo">
+            <ul class="drop-down-list" id="options-catagories">
+              <li><a href="/HTML/contact.html" class="drop-down-list-item">Contact us</a></li>
+              <li><a href="/HTML/about.html" class="drop-down-list-item">About us</a></li>
+            </ul>
+          </li>
+          <li class="sign-up"><a href="/HTML/signup.html"  class="" target="_blank">Sign Up</a></li>
+        </ul>
+      </div>
+      <main class="txt-center">
+        <div class="main-paragraph-container">
+        <h1 class="main-heading">Judo</h1>
+        <p class="intro-paragraph">Judo is a contemporary Japanese combat sport, a martial art practiced without weapons, and an Olympic sport since 1964. It is also the most popular type of international jacket wrestling competition. Kanō Jigorō founded Judo in 1882 as an eclectic martial art. It set itself apart from its forebears by emphasizing "randori," or "free sparring," rather than "kata," or prearranged forms, and by doing away with the aspects of striking and weapon training. Judo became the official martial art of the Tokyo Metropolitan Police Department (Keishicho Bujutsu Taikai) when it gained recognition for its superiority over well-established jujutsu schools in tournaments held by the department.
+        </p>
+      </div>
+      <!--Insert slider/carousal here-->
+        <div class="paragraph-container">
+          <h3 class="sub-heading">History:</h3>
+          <p class="paragraph">With its origins in Japan's martial arts traditions, the word "judo," which means "gentle way," has a long and illustrious history. Jigoro Kano (1860–1938), a significant figure in Japanese education and martial arts, is closely linked to its development. Jigoro Kano aimed to modernize the conventional martial arts of his era, which frequently emphasized forceful methods and physical prowess. He envisioned a system that encouraged respect for one another, personal development, and the development of physical fitness, mental discipline, and successful self-defense. Kano founded the Kodokan Judo Institute in Tokyo in 1882 as a hub for the research and instruction of his brand-new martial arts. Taking inspiration from many jujutsu traditions, Kano combined techniques emphasizing time, balance, and leverage over brute force. The ideas of "mutual welfare and benefit" (jita kyoei) and "maximum efficiency, minimum effort" (ju no ri) are fundamental to Judo's philosophy. These tenets transcend the mat, serving as a guide for practitioners in their interactions with others within and outside the dojo. The popularity of judo quickly expanded outside of Japan as well. Kano sent out teachers to spread Judo's name throughout the world, and in 1964, it was added to the Olympic Games. Millions of individuals of different ages and backgrounds practice judo today, including both recreational practitioners and competitive athletes. A variety of techniques, such as throws, pins, joint locks, and chokeholds, are included in modern judo. The goal of a competitive battle is to demonstrate talent, timing, and tactical awareness by either throwing the opponent onto their back or rendering them helpless on the ground. Beyond its physical components, character development, humility, and respect for others are highly valued in Judo. The goal of practitioners' rigorous training and dedication to its ideals is to develop not only physical prowess but also mental toughness and moral integrity. In conclusion, Judo's transformation from a traditional martial art to a worldwide phenomenon is a testament to its enduring appeal and eternal principles of harmony, respect for others, and self-improvement.
+            </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Rules of the game:</h3>
+          <p class="paragraph">The rules of Judo govern both its competitive aspect and its practice within the dojo. Here are the key rules and guidelines:
+            <ul class="list-container">
+              <li class="list">
+                <h4>Objective:</h4>
+                <p> In competitive Judo, the primary objective is to score points by executing throws, pins, joint locks, or chokeholds to control or subdue the opponent.</p>
+              </li>
+              <li class="list">
+                <h4>Scoring:</h4>
+                <p>Points are awarded based on the execution and effectiveness of techniques. The highest-scoring technique in Judo is the ippon, which instantly ends the match and earns the contestant an immediate victory. Other scores include waza-ari (half-point) and yuko (quarter-point).</p>
+              </li>
+              <li class="list">
+                <h4>Duration:</h4>
+                <p>Competitive Judo matches typically last for a set duration, which varies depending on the level of competition and age category. In international competitions, matches for adults commonly last 5 minutes for men and 4 minutes for women. Youth matches may have shorter durations.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Fighting Area:</h4>
+                <p> Matches take place on a mat area known as the tatami. The size of the tatami can vary, but it typically provides ample space for contestants to engage in combat safely.</p>
+              </li>
+              <li class="list">
+                <h4>Attire:</h4>
+                <p>Competitors wear traditional Judo uniforms known as judogi, consisting of a jacket, pants, and a belt (obi) that signifies rank. Judogi must meet specific standards regarding fabric, size, and appearance.</p>
+              </li>
+              <li class="list">
+                <h4>Illegal Techniques:</h4>
+                <p>Certain techniques are prohibited in competitive Judo due to their high risk of injury. These include striking, kicking, hair grabbing, and attacking the opponent's face or joints in a manner deemed unsafe.</p>
+              </li>
+              <li class="list">
+                <h4>Penalties:</h4>
+                <p>Contestants may receive penalties, known as shido, for various infractions such as stalling, passivity, or violating the rules of engagement. Accumulation of penalties can result in disqualification.</p>
+              </li>
+              <li class="list">
+                <h4>Judges and Referees:</h4>
+                <p>Matches are overseen by referees and judges who enforce the rules, assess the validity of techniques, and determine the outcome of contested actions.</p>
+              </li>
+              <li class="list">
+                <h4>Sportsmanship:</h4>
+                <p>Respect for opponents, officials, and the spirit of Judo is paramount. Contestants are expected to display sportsmanship, humility, and adherence to the principles of mutual welfare and benefit.</p>
+              </li>
+              <li class="list">
+                <h4>Weight Categories:</h4>
+                <p>In many competitive settings, contestants are grouped into weight categories to ensure fair and equitable competition.</p>
+              </li>
+            </ul>
+            <p class="paragraph">
+              This prevents significant disparities in size and strength between opponents.
+<br>
+              These rules and guidelines help maintain the safety, fairness, and integrity of Judo competitions while upholding the values of discipline, respect, and personal development that are central to martial arts.   
+              
+            </p>
+            </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Players of the game:</h3>
+          <p class="paragraph">
+            Judo is typically practiced between two individuals, making it a one-on-one combat sport. In competitive judo matches, two players, known as judoka, face each other on a mat called the tatami. The objective is to use judo techniques to throw the opponent onto their back or to immobilize them on the ground, achieving what is known as an ippon, which signifies a decisive victory.
+<br>
+While judo is primarily practiced in a one-on-one format, it is also common to see group classes and training sessions where multiple judoka practice techniques together. However, in official competitions and matches, judo is strictly a two-player sport.
+<br>
+Here are some popular players of the game:
+            <ul class="list-container">
+          <li class="list"><a href="https://en.wikipedia.org/wiki/Teddy_Riner" target="_blank">Teddy Riner</a></li>
+          <li class="list"><a href="https://en.wikipedia.org/wiki/Ryoko_Tani" target="_blank">Ryoko Tani</a></li>
+          <li class="list"><a href="https://en.wikipedia.org/wiki/Yasuhiro_Yamashita" target="_blank">Yasuhiro Yamashita</a></li>
+          <li class="list"><a href="https://en.wikipedia.org/wiki/Tadahiro_Nomura" target="_blank">Tadahiro Nomura</a></li>
+          <li class="list"><a href="https://en.wikipedia.org/wiki/Shohei_Ono" target="_blank">Shohei Ono</a></li>
+          <li class="list"><a href="https://en.wikipedia.org/wiki/Anton_Geesink" target="_blank">Anton Geesink</a></li>
+          <li class="list"><a href="https://en.wikipedia.org/wiki/Kayla_Harrison" target="_blank">Kayla Harrison</a></li>
+        </ul>
+        </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Strategy of the game:</h3>
+          <p class="paragraph">
+            In judo, strategy plays a crucial role in achieving success both on the training mat and in competitive matches. A strategic approach encompasses various elements, including tactics, technique selection, mental preparation, and adaptability. 
+            <br>
+Firstly, understanding one's strengths and weaknesses, as well as those of opponents, is fundamental. Judoka often develops specific techniques and combinations tailored to exploit an opponent's vulnerabilities while minimizing their risks.
+<br>
+Tactical awareness is essential during matches, as judo requires split-second decision-making. Judoka must constantly assess the situation, anticipate their opponent's movements, and adjust their strategy accordingly. This may involve creating openings for throws, countering opponents' attacks, or transitioning seamlessly between standing and ground techniques.
+<br>
+Effective gripping is a key strategic aspect of judo. Establishing dominant grips allows judoka to control the pace of the match, set up their preferred techniques, and limit their opponent's options. Gripping strategies may involve breaking an opponent's grip, obtaining advantageous positions, or manipulating the opponent's balance.
+<br>
+Another critical aspect of judo strategy is mental preparation and composure. Maintaining focus, confidence, and resilience under pressure is essential for overcoming challenges and capitalizing on opportunities during matches.
+<br>
+Adaptability is also crucial in judo, as matches can unfold unpredictably. Judoka must be prepared to adjust its strategy in real-time based on the evolving dynamics of the match, opponents' reactions, and the referee's decisions.
+<br>
+Overall, a successful judo strategy combines technical proficiency, tactical awareness, mental fortitude, and adaptability. By mastering these elements, judoka can optimize their performance and achieve their goals on the tatami.
+
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Popular tournament:</h3>
+          <p class="paragraph">
+            The World Judo Championships, organized annually by the International Judo Federation (IJF), stand as one of the most highly anticipated events in the judo calendar. Drawing elite judoka from across the globe, this prestigious tournament showcases the pinnacle of technical mastery, mental fortitude, and physical prowess in the sport. Competitors vie for world titles in their respective weight categories, engaging in intense matches that captivate audiences and inspire judo enthusiasts worldwide. The World Championships not only serve as a platform for athletes to demonstrate their skills but also foster camaraderie and mutual respect among participants, embodying the core principles of judo both on and off the tatami. As athletes strive for victory and nations unite in the spirit of competition, the World Judo Championships represent a celebration of excellence, diversity, and the enduring legacy of judo on the world stage.
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">How many countries play the game:</h3>
+          <p class="paragraph">
+            Judo is a globally popular sport practiced in numerous countries around the world. The International Judo Federation (IJF), the governing body for judo, boasts a membership that includes national judo federations from over 200 countries and territories. This extensive reach reflects the widespread popularity and participation in judo across diverse cultures, continents, and communities. From its origins in Japan to its global expansion and recognition, judo continues to transcend borders, bringing together people of all ages, backgrounds, and abilities in the shared pursuit of excellence, camaraderie, and mutual respect on the tatami.
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Important Facts:</h3>
+          <p class="paragraph">
+            Judo, originating in Japan in the late 19th century under the guidance of Jigoro Kano, has evolved into a globally recognized martial art and Olympic sport. Kano's vision for judo emphasized not only physical prowess but also mental discipline and mutual respect, encapsulated in the principles of "maximum efficiency, minimum effort" (ju no ri) and "mutual welfare and benefit" (jita koi). Central to judo are its techniques, including throws, pins, joint locks, and chokeholds, which judoka utilizes to redirect and control their opponent's energy.
+<br>
+The sport's belt-ranking system, ranging from white to black belts, signifies a practitioner's skill level and progression. Judo competitions, held on a mat called the tatami, demand precision, agility, and strategic thinking as opponents seek to score ippon, the highest attainable score, through throws or ground control.
+<br>
+Beyond its physical aspects, judo fosters values of respect, humility, and perseverance. Its kata, or prearranged forms, serve as a means of preserving techniques and principles. With millions of practitioners worldwide, judo's inclusive nature transcends cultural and geographical boundaries, uniting individuals in the pursuit of personal development and athletic excellence. As a discipline that promotes character building and mutual understanding, judo continues to inspire practitioners of all ages and backgrounds, embodying the enduring spirit of respect and harmony both on and off the tatami.
+
+            </p>
+        </div>
+      </main>
+<footer>Copyright&copy; Sportsinfo.com | All rights reserved</footer>
+</div>
+</body>
+</html>

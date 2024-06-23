@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motorcycle Racing</title>
+    <link rel="stylesheet" href="/CSS/utilities.css" />
+    <link rel="stylesheet" href="/CSS/navbar.css" />
+    <link rel="stylesheet" href="/CSS/info.css" />
+    <link rel="stylesheet" href="/CSS/searchbar.css">
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/JavaScript/main.js"></script>
+    <script src="/JavaScript/searchbar.js"></script>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <!-- navbar starts here -->
+      <div class="navbar flex justify-between item-center">
+        <!-- navbar is divided into 3 parts logo, search bar, sports + login/signup  -->
+        <!-- logo-container -->
+        <div class="logo-container flex navbar-item">
+          <h1 class=""><a href="/HTML/index.html">Sports Info</a></h1>
+          <img
+            src="/Assets/Images/bars-solid.svg"
+            alt=""
+            class="collapse menu-icon"
+          />
+        </div>
+        <!-- search-bar-container -->
+        <div
+          class="search-bar-container flex-col item-center navbar-item collapsed"
+        >
+        <div class="searchBar flex">
+          <input
+            class="mx-auto"
+            type="search"
+            id="search-bar"
+            onkeyup="myFunction()"
+            placeholder="   search any sport here"
+          />
+          <button id="search-button"><img src="/Assets/Images/magnifying-glass-solid.svg" alt="search icon" class="search-icon"></button>
+        </div>
+          <ul class="drop-down-lists" id="search-list">
+            <li><a href="/HTML/athletics.html" class="drop-down-list-item search-list-item">Athletics</a></li>
+            <li><a href="/HTML/badminton.html" class="drop-down-list-item search-list-item">Badminton</a></li>
+            <li><a href="/HTML/billiards.html" class="drop-down-list-item search-list-item">Billiards</a></li>
+            <li><a href="/HTML/chess.html" class="drop-down-list-item search-list-item">Chess</a></li>
+            <li><a href="/HTML/football.html" class="drop-down-list-item search-list-item">Football</a></li>
+            <li><a href="/HTML/golf.html" class="drop-down-list-item search-list-item">Golf</a></li>
+            <li><a href="/HTML/judo.html" class="drop-down-list-item search-list-item">Judo</a></li>
+            <li><a href="/HTML/motorcycle.html" class="drop-down-list-item search-list-item">Motorcycle Racing</a></li>
+            <li><a href="/HTML/swimming.html" class="drop-down-list-item search-list-item">Swimming</a></li>
+            <li><a href="/HTML/tennis.html" class="drop-down-list-item search-list-item">Tennis</a></li>
+            <li><a href="/HTML/volley.html" class="drop-down-list-item search-list-item">Volleyball</a></li>
+          </ul>
+        </div>
+        <!-- options-container -->
+        <ul
+          class="flex navbar-item item-center collapsed drop-down-container"
+        >
+          <li class="drop-btn" id="sports">
+            Sports
+            <img
+              src="/Assets/Images/chevron-down-solid.svg"
+              alt="drop-down-logo"
+              class="drop-down-logo"
+            />
+            <ul class="drop-down-list txt-center item-center mx-auto" id="sports-catagories">
+              <li>
+                <a href="/HTML/athletics.html" class="drop-down-list-item">Athletics</a>
+              </li>
+              <li>
+                <a href="/HTML/badminton.html" class="drop-down-list-item">Badminton</a>
+              </li>
+              <li>
+                <a href="/HTML/billiards.html" class="drop-down-list-item">Billiards</a>
+              </li>
+              <li><a href="/HTML/chess.html" class="drop-down-list-item">Chess</a></li>
+              <li><a href="/HTML/football.html" class="drop-down-list-item">Football</a></li>
+              <li><a href="/HTML/golf.html" class="drop-down-list-item">Golf</a></li>
+              <li><a href="/HTML/judo.html" class="drop-down-list-item">Judo</a></li>
+              <li>
+                <a href="/HTML/motorcycle.html" class="drop-down-list-item"
+                  >Motorcycle Racing</a
+                >
+              </li>
+              <li><a href="/HTML/swimming.html" class="drop-down-list-item">Swimming</a></li>
+              <li><a href="/HTML/tennis.html" class="drop-down-list-item">Tennis</a></li>
+              <li>
+                <a href="/HTML/volley.html" class="drop-down-list-item">Volleyball</a>
+              </li>
+            </ul>
+          </li>
+          <li class="drop-btn" id="options">More
+            <img src="/Assets/Images/chevron-down-solid.svg" alt="down arrow" class="drop-down-logo">
+            <ul class="drop-down-list" id="options-catagories">
+              <li><a href="/HTML/contact.html" class="drop-down-list-item">Contact us</a></li>
+              <li><a href="/HTML/about.html" class="drop-down-list-item">About us</a></li>
+            </ul>
+          </li>
+          <li class="sign-up"><a href="/HTML/signup.html"  class="" target="_blank">Sign Up</a></li>
+        </ul>
+      </div>
+      <main class="txt-center">
+        <div class="main-paragraph-container">
+        <h1 class="main-heading">Motorcycle Racing</h1>
+        <p class="intro-paragraph">
+          Motorcycle racing is a high-octane spectacle that thrills audiences with its combination of speed, strategy, and raw athleticism. Spanning diverse disciplines such as road racing, motocross, and superbike competitions, this sport demands unwavering focus and split-second decision-making from its riders as they navigate treacherous tracks and push the limits of both man and machine. Whether it's the thunderous roar of engines on the straightaways or the balletic precision of riders leaning into tight corners, each race is a symphony of skill and determination. Beyond the adrenaline-fueled action, motorcycle racing creates a tight-knit community of fans and competitors who share a passion for the thrill of the ride, making it a sport that transcends mere competition to become a way of life for those who live and breathe the open road.
+  
+        </p>
+      </div>
+      <!--Insert slider/carousal here-->
+        <div class="paragraph-container">
+          <h3 class="sub-heading">History:</h3>
+          <p class="paragraph">
+            Motorcycle racing boasts a rich and storied history dating back to the early 20th century when enthusiasts first began testing the limits of these two-wheeled machines. From the daredevils racing on dirt tracks to the pioneers who navigated the dangerous roads of early endurance races, the sport rapidly gained popularity and evolved into various disciplines. Throughout the decades, iconic events like the Isle of Man TT and the Daytona 200 have captured the imagination of fans worldwide, showcasing the daring feats of legendary riders and the technological advancements of the sport.
+<br>
+As motorcycle racing matured, it became a global phenomenon, with organizations like the Fédération Internationale de Motocyclisme (FIM) overseeing international competitions such as MotoGP and World Superbike Championship. The sport continues to evolve, with advancements in technology, safety, and inclusivity shaping its future. Yet, at its core, motorcycle racing remains a testament to the thrill of speed, the spirit of competition, and the enduring passion of riders and fans alike.
+            </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Rules of the game:</h3>
+          <p class="paragraph">
+            The rules of motorcycle racing vary depending on the specific discipline and the governing body overseeing the competition. However, there are some common elements across many forms of motorcycle racing.
+            <ul class="list-container">
+              <li class="list">
+                <h4>Safety Gear:</h4>
+                <p>
+                  Riders must wear appropriate safety gear, including helmets, gloves, boots, and leather or other protective clothing.  
+                </p>
+              </li>
+              <li class="list">
+                <h4>Technical Regulations:</h4>
+                <p>
+                  Each competition typically has regulations governing the technical specifications of motorcycles, including engine size, weight, and modifications allowed.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Race Procedures:</h4>
+                <p>
+                  Races typically begin with a warm-up or practice session, followed by qualifying sessions to determine starting positions. The main race may vary in length and format, with some races being based on distance and others on time.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Flags and Signals:</h4>
+                <p>
+                Flags and signals are used by race officials to communicate with riders during a race. For example, a red flag indicates the race has been stopped, while a yellow flag warns of hazards on the track.  
+                </p>
+              </li>
+              <li class="list">
+                <h4>Riding Conduct:</h4>
+                <p>Riders must adhere to rules regarding on-track conduct, including overtaking maneuvers, track limits, and respecting other competitors.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Penalties:</h4>
+                <p>
+                  Penalties may be imposed for rule violations, ranging from time penalties to disqualification from the race.
+
+                </p>
+              </li>
+              <li class="list">
+                <h4>Protests and Appeals:</h4>
+                <p>
+                  Procedures are in place for teams and riders to lodge protests or appeals regarding decisions made by race officials.
+                </p>
+              </li>
+            </ul>
+            <p class="paragraph">
+              These are just some of the basic rules and regulations that govern motorcycle racing. Each discipline may have its own specific rules and nuances, designed to ensure fair competition and the safety of participants.
+            </p>
+            </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Players of the game:</h3>
+          <p class="paragraph">
+            The number of players required in motorcycle racing varies depending on the specific discipline of the sport. In some disciplines, such as motocross or supercross, races typically involve multiple riders competing simultaneously on the same track. These races may feature anywhere from a handful of riders in smaller events to dozens of competitors in larger competitions.
+<br>
+On the other hand, in disciplines like road racing or endurance racing, races may involve individual riders competing against the clock or against each other in a series of laps around a circuit. In these cases, the number of riders on the track at any given time can vary, but races often feature a significant number of participants.
+<br>
+Ultimately, the number of players required in motorcycle racing depends on the rules and format of the specific event or competition, ranging from individual riders to large groups competing against each other.
+<br>
+Here are some popular players:
+            <ul class="list-container">
+          <li class="list">
+            <h4><a href="https://en.wikipedia.org/wiki/Valentino_Rossi" target="_blank">Valentino Rossi</a></h4>
+          </li>
+          <li class="list">
+            <h4><a href="https://en.wikipedia.org/wiki/Marc_M%C3%A1rquez" target="_blank">Marc Márquez</a></h4>
+          </li>
+          <li class="list">
+            <h4><a href="https://en.wikipedia.org/wiki/Jorge_Lorenzo" target="_blank">Jorge Lorenzo</a></h4>
+          </li>
+          <li class="list">
+            <h4><a href="https://en.wikipedia.org/wiki/Casey_Stoner" target="_blank">Casey Stoner</a></h4>
+          </li>
+          <li class="list">
+            <h4><a href="https://en.wikipedia.org/wiki/Dani_Pedrosa" target="_blank">Dani Pedrosa</a></h4>
+          </li>
+          <li class="list">
+            <h4><a href="https://en.wikipedia.org/wiki/Mick_Doohan" target="_blank">Mick Doohan</a></h4>
+          </li>
+          <li class="list">
+            <h4><a href="https://en.wikipedia.org/wiki/Kevin_Schwantz" target="_blank">Kevin Schwantz</a></h4>
+          </li>
+        </ul>
+        </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Strategy of the game:</h3>
+          <p class="paragraph">
+            fusion of technology, athleticism, and strategy, making it a must-watch event for motorsport enthusiasts everywhere.In motorcycle racing, strategy is the intricate dance between anticipation, precision, and adaptability, where every decision holds the potential to shape the outcome of the race. It involves a meticulous blend of racecraft, where riders calculate the optimal moment to attack or defend positions, and technical expertise, as they fine-tune their bikes for peak performance on the ever-changing track. Additionally, tire and fuel management become critical factors, demanding a delicate balance between pushing the limits and preserving resources for the duration of the race. Weather conditions add another layer of complexity, forcing riders to quickly adjust their approach to maintain grip and control. Amidst the intensity, maintaining unwavering focus and mental resilience is paramount, ensuring riders can seize opportunities and react swiftly to unforeseen challenges. Moreover, analyzing competitors' strengths and weaknesses provides valuable insights, guiding strategic decisions throughout the race. Ultimately, a successful motorcycle racing strategy is a finely orchestrated symphony of skill, intuition, and calculated risk-taking, where the quest for victory unfolds in every twist of the throttle and every turn of the wheel.  
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Popular tournament:</h3>
+          <p class="paragraph">
+            The MotoGP World Championship stands as the pinnacle of motorcycle racing, captivating audiences worldwide with its blend of speed, skill, and spectacle. As the premier class of motorcycle road racing, MotoGP features the world's most talented riders competing aboard cutting-edge machinery from renowned manufacturers like Yamaha, Honda, Ducati, and Suzuki. The championship traverses iconic circuits across the globe, from the historic twists and turns of circuits like Mugello and Assen to the modern marvels of circuits like Circuit of the Americas and Sepang International Circuit.
+<br>
+Each season, riders battle for supremacy over a series of races, navigating high-speed straights and challenging corners while pushing the limits of their finely tuned motorcycles. With races spanning multiple continents and attracting millions of passionate fans, MotoGP showcases the ultimate 
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">How many countries play the game:</h3>
+          <p class="paragraph">MotoGP, being a global championship, attracts participants and fans from countries all around the world. While the championship itself is based in Europe, races are held on various continents, including Europe, Asia, the Americas, and Oceania. Riders from numerous nations participate in MotoGP, contributing to its international appeal and fostering a diverse and inclusive atmosphere within the sport. Therefore, it's accurate to say that many countries are involved in playing or participating in MotoGP.
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Important Facts:</h3>
+          <p class="paragraph">Here are some important facts about MotoGP:
+            <ul class="list-container">
+              <li class="list">
+                <h4>Premier Class:</h4>
+                <p>
+                  MotoGP is the premier class of motorcycle road racing, featuring the fastest bikes and most skilled riders in the world.
+                </p>
+              </li>
+              <li class="list">
+                <h4>History:</h4>
+                <p>
+                  The championship has a rich history, dating back to its inception in 1949 as the FIM Road Racing World Championship Grand Prix.
+
+                </p>
+              </li>
+              <li class="list">
+                <h4>Global Appeal:</h4>
+                <p>
+                  MotoGP is a truly global sport, with races held on iconic circuits across continents, including Europe, Asia, the Americas, and Oceania.
+
+                </p>
+              </li>
+              <li class="list">
+                <h4>Technological Innovation:</h4>
+                <p>
+                  The championship showcases cutting-edge technology, with motorcycles featuring advanced engineering and design to maximize speed and performance.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Thrilling Races:</h4>
+                <p>
+                  MotoGP races are known for their intense battles and high-speed action, with riders pushing the limits of their abilities on the track.
+
+                </p>
+              </li>
+              <li class="list">
+                <h4>Iconic Riders:</h4>
+                <p>
+                  The championship has seen numerous legendary riders throughout its history, including names like Valentino Rossi, Marc Márquez, Giacomo Agostini, and Mick Doohan.
+
+                </p>
+              </li>
+              <li class="list">
+                <h4>Safety Measures:</h4>
+                <p>
+                  MotoGP prioritizes rider safety, implementing stringent regulations and safety measures to minimize the risk of accidents and injuries.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Fan Base:</h4>
+                <p>
+                  MotoGP has a passionate and dedicated fan base, with millions of fans worldwide following the championship and attending races to experience the excitement firsthand.
+
+                </p>
+              </li>
+              <li class="list">
+                <h4>Television Coverage:</h4>
+                <p>
+                  The championship receives extensive television coverage, reaching millions of viewers globally and further enhancing its popularity and visibility.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Economic Impact:</h4>
+                <p>
+                  MotoGP has a significant economic impact, generating revenue for host cities and countries through tourism, ticket sales, and sponsorship deals.
+                </p>
+              </li>
+            </ul>
+            <p class="paragraph">
+              These facts highlight the importance and appeal of MotoGP as one of the premier motorsport events in the world.
+            </p>
+            </p>
+        </div>
+      </main>
+<footer>Copyright&copy; Sportsinfo.com | All rights reserved</footer>
+</div>
+</body>
+</html>

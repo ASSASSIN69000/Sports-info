@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Billiards</title>
+  <link rel="stylesheet" href="/CSS/utilities.css" />
+  <link rel="stylesheet" href="/CSS/navbar.css" />
+  <link rel="stylesheet" href="/CSS/info.css" />
+  <link rel="stylesheet" href="/CSS/searchbar.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="/JavaScript/main.js"></script>
+  <script src="/JavaScript/searchbar.js"></script>
+</head>
+
+<body>
+  <div class="container mx-auto">
+    <!-- navbar starts here -->
+    <div class="navbar flex justify-between item-center">
+      <!-- navbar is divided into 3 parts logo, search bar, sports + login/signup  -->
+      <!-- logo-container -->
+      <div class="logo-container flex navbar-item">
+        <h1 class=""><a href="/HTML/index.html">Sports Info</a></h1>
+        <img src="/Assets/Images/bars-solid.svg" alt="" class="collapse menu-icon" />
+      </div>
+      <!-- search-bar-container -->
+      <div class="search-bar-container flex-col item-center navbar-item collapsed">
+        <div class="searchBar flex">
+          <input class="mx-auto" type="search" id="search-bar" onkeyup="myFunction()"
+            placeholder="   search any sport here" />
+          <button id="search-button"><img src="/Assets/Images/magnifying-glass-solid.svg" alt="search icon"
+              class="search-icon"></button>
+        </div>
+        <ul class="drop-down-lists" id="search-list">
+          <li><a href="/HTML/athletics.html" class="drop-down-list-item search-list-item">Athletics</a></li>
+          <li><a href="/HTML/badminton.html" class="drop-down-list-item search-list-item">Badminton</a></li>
+          <li><a href="/HTML/billiards.html" class="drop-down-list-item search-list-item">Billiards</a></li>
+          <li><a href="/HTML/chess.html" class="drop-down-list-item search-list-item">Chess</a></li>
+          <li><a href="/HTML/football.html" class="drop-down-list-item search-list-item">Football</a></li>
+          <li><a href="/HTML/golf.html" class="drop-down-list-item search-list-item">Golf</a></li>
+          <li><a href="/HTML/judo.html" class="drop-down-list-item search-list-item">Judo</a></li>
+          <li><a href="/HTML/motorcycle.html" class="drop-down-list-item search-list-item">Motorcycle Racing</a></li>
+          <li><a href="/HTML/swimming.html" class="drop-down-list-item search-list-item">Swimming</a></li>
+          <li><a href="/HTML/tennis.html" class="drop-down-list-item search-list-item">Tennis</a></li>
+          <li><a href="/HTML/volley.html" class="drop-down-list-item search-list-item">Volleyball</a></li>
+        </ul>
+      </div>
+      <!-- options-container -->
+      <ul class="flex navbar-item item-center collapsed drop-down-container">
+        <li class="drop-btn" id="sports">
+          Sports
+          <img src="/Assets/Images/chevron-down-solid.svg" alt="drop-down-logo" class="drop-down-logo" />
+          <ul class="drop-down-list txt-center item-center mx-auto" id="sports-catagories">
+            <li>
+              <a href="/HTML/athletics.html" class="drop-down-list-item">Athletics</a>
+            </li>
+            <li>
+              <a href="/HTML/badminton.html" class="drop-down-list-item">Badminton</a>
+            </li>
+            <li>
+              <a href="/HTML/billiards.html" class="drop-down-list-item">Billiards</a>
+            </li>
+            <li><a href="/HTML/chess.html" class="drop-down-list-item">Chess</a></li>
+            <li><a href="/HTML/football.html" class="drop-down-list-item">Football</a></li>
+            <li><a href="/HTML/golf.html" class="drop-down-list-item">Golf</a></li>
+            <li><a href="/HTML/judo.html" class="drop-down-list-item">Judo</a></li>
+            <li>
+              <a href="/HTML/motorcycle.html" class="drop-down-list-item">Motorcycle Racing</a>
+            </li>
+            <li><a href="/HTML/swimming.html" class="drop-down-list-item">Swimming</a></li>
+            <li><a href="/HTML/tennis.html" class="drop-down-list-item">Tennis</a></li>
+            <li>
+              <a href="/HTML/volley.html" class="drop-down-list-item">Volleyball</a>
+            </li>
+          </ul>
+        </li>
+        <li class="drop-btn" id="options">More
+          <img src="/Assets/Images/chevron-down-solid.svg" alt="down arrow" class="drop-down-logo">
+          <ul class="drop-down-list" id="options-catagories">
+            <li><a href="/HTML/contact.html" class="drop-down-list-item">Contact us</a></li>
+            <li><a href="/HTML/about.html" class="drop-down-list-item">About us</a></li>
+          </ul>
+        </li>
+        <li class="sign-up"><a href="/HTML/signup.html" class="" target="_blank">Sign Up</a></li>
+      </ul>
+    </div>
+    <main class="txt-center">
+      <div class="main-paragraph-container">
+        <h1 class="main-heading">Billiards</h1>
+        <p class="intro-paragraph">
+          Billiards, a timeless game steeped in history and tradition, is a captivating sport that blends skill,
+          strategy, and finesse into a mesmerizing spectacle of precision and control. Originating centuries ago in the
+          refined courts of Europe, billiards has evolved from its aristocratic roots to become a beloved pastime
+          enjoyed by people of all ages and backgrounds worldwide.
+          <br>
+          At its core, billiards is a game of precise calculation and execution, where players must deftly manipulate
+          cue sticks to strike colored balls with precision, aiming to sink them into designated pockets on a
+          rectangular table covered in smooth felt. The game's intricate rules and strategies challenge players to not
+          only master the art of cue ball control but also to anticipate and counter their opponents' moves with
+          strategic foresight. Whether played casually among friends in a local bar or competitively on a global stage,
+          billiards demands both mental acuity and physical dexterity, making it a perennial favorite among enthusiasts
+          seeking a blend of cerebral challenge and tactile skill.
+          <br>
+          As players hone their techniques and refine their strategies, billiards transcends mere recreation, becoming a
+          test of character and a pursuit of excellence, where every shot holds the promise of triumph or the sting of
+          defeat, and where the timeless allure of the game continues to captivate generations old and new.
+
+        </p>
+      </div>
+      <!--Insert slider/carousal here-->
+      <div class="paragraph-container">
+        <h3 class="sub-heading">History:</h3>
+        <p class="paragraph">
+          The history of billiards traces back to the 15th century, with origins rooted in games played on grassy lawns.
+          The evolution of billiards as we know it today began in Europe, particularly in France and England, where it
+          gained popularity among the nobility and the upper class. Originally played outdoors, the game transitioned
+          indoors onto tables with green cloth to mimic the grass surface. As the game progressed, tables evolved,
+          becoming smaller and more refined, with cushions added to facilitate bank shots.
+          <br>
+          The term "billiard" itself derives from the French word "billart," meaning "stick," reflecting the importance
+          of the cue stick in gameplay. Over the centuries, billiards underwent numerous refinements, including the
+          standardization of rules and the introduction of different variations such as English billiards, snooker, and
+          pool.
+          <br>
+          With the advent of industrialization in the 19th century, billiards gained even broader appeal, spreading
+          across continents and becoming a cherished pastime in both public venues and private homes. Today, billiards
+          continues to thrive as a globally enjoyed sport, maintaining its rich heritage while embracing modern
+          innovations and technological advancements.
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Rules of the game:</h3>
+        <p class="paragraph">
+          Billiards encompasses various rule sets depending on the specific game being played, such as eight-ball,
+          nine-ball, straight pool, and snooker. However, some general principles apply across most billiards
+          variations. Players typically use a cue stick to strike the cue ball, aiming to pocket numbered object balls
+          into designated pockets on the table. The player or team that legally pockets all of their assigned balls and
+          then the black 8-ball or other designated winning ball, without committing fouls, wins the game.
+          <br>
+          Fouls can include scratching (pocketing the cue ball), failing to hit any object ball, hitting the wrong
+          object ball, or not driving any ball to a rail after contact. Additionally, players often call shots in
+          advance, indicating which ball they intend to pocket and where on the table they plan to leave the cue ball.
+          <br>
+          This adds a strategic element to the game, requiring players to plan their shots carefully and consider
+          position play for subsequent shots. Specific games may have additional rules or variations, but these basic
+          principles form the foundation of most billiards games.
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Popular players:</h3>
+        <p class="paragraph">
+          Billiards can be played by two or more players, depending on the specific game being played and the format of
+          the match. Some games, like eight-ball and nine-ball, are commonly played in one-on-one matches, while others,
+          such as doubles or team tournaments, involve multiple players on each side. The number of players required
+          ultimately depends on the game's rules and the preferences of the players involved.
+          <br>
+          Here are some popular players:
+        <ul class="list-container">
+          <li class="list">
+            <h4><a href="">Efren Reyes</a></h4>
+          </li>
+          <li class="list">
+            <h4><a href="">Shane Van Boening</a></h4>
+          </li>
+          <li class="list">
+            <h4><a href="">Jeanette Lee (The Black Widow)</a></h4>
+          </li>
+          <li class="list">
+            <h4><a href="">Ronnie O'Sullivan (mainly known for snooker)
+              </a></h4>
+          </li>
+        </ul>
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Strategy of the game:</h3>
+        <p class="paragraph">
+          Billiard's strategy encompasses a multifaceted approach to the game, requiring players to navigate a complex
+          interplay of shot selection, cue ball control, positioning, and tactical decision-making. Central to effective
+          strategy is the art of shot selection, where players must assess the table layout, angles, and potential
+          outcomes to determine the most advantageous shots.
+          <br>
+          This involves considering not only how to pocket balls but also how to position the cue ball for subsequent
+          shots or defensive plays. Cue ball control is paramount, as players manipulate the cue ball's speed, spin, and
+          trajectory to achieve desired outcomes, whether it's setting up for the next shot, executing precise position
+          play, or strategically placing the cue ball to thwart the opponent's opportunities.
+          <br>
+          Position play is a strategic cornerstone, requiring players to anticipate and plan several shots, carefully
+          orchestrating the movement of balls on the table to create optimal pathways for future shots. Safety play is
+          another crucial aspect, allowing players to strategically position balls to limit their opponent's options or
+          to leave the cue ball in challenging positions, forcing difficult shots or potential fouls.
+          <br>
+          Successful strategy also involves risk management, with players weighing the potential rewards of aggressive
+          shots against the inherent risks, opting for safer plays when necessary to maintain control of the game.
+          Mental toughness is essential, as players must maintain focus, concentration, and composure, especially during
+          critical moments or under pressure.
+          <br>
+          Adaptability is key, as players adjust their strategies based on the opponent's style, table conditions, and
+          game progression, capitalizing on opportunities and overcoming challenges as they arise. Ultimately, an
+          effective billiards strategy requires a nuanced understanding of the game's dynamics, combined with keen
+          observation, strategic foresight, and the ability to execute under pressure.
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Popular tournament:</h3>
+        <p class="paragraph">
+          One popular billiards tournament is the "Mosconi Cup." Named after the legendary American player Willie
+          Mosconi, the Mosconi Cup is an annual pool competition between teams representing Europe and the United
+          States. The tournament features some of the world's top professional players and is known for its intense
+          rivalry, high-level competition, and passionate fan base.
+          <br>
+          The format typically includes a series of singles and doubles matches played over several days, with the first
+          team to reach a set number of points declared the winner. The Mosconi Cup is widely regarded as one of the
+          most prestigious events in the professional pool, drawing widespread attention and viewership from fans around
+          the world.
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">How many countries play the game:</h3>
+        <p class="paragraph">
+          Billiards is played in numerous countries around the world, making it a truly global sport. While it may be
+          more popular in some regions than others, you can find billiards enthusiasts and players in countries spanning
+          every continent. From the United States and Europe to Asia, Africa, and beyond, billiards have a diverse and
+          widespread following.
+          <br>
+          The game's accessibility, versatility, and appeal contribute to its popularity across cultures and nations,
+          with variations like pool, snooker, and carom attracting players from diverse backgrounds. Overall, while it's
+          challenging to provide an exact number, it's safe to say that billiards is played in a vast array of
+          countries, each contributing to the rich tapestry of the sport's global community.
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Important facts:</h3>
+        <p class="paragraph">
+          Here are some important facts about billiards:
+        <ul class="list-container">
+          <li class="list">
+            <h4>Origins:</h4>
+            <p>Billiards has a long and storied history, dating back to games played on grassy lawns in Europe during
+              the 15th century. It gradually evolved into the indoor table game we know today.
+            </p>
+          <li class="list">
+            <h4>Variations:</h4>
+            <p>
+              There are several variations of billiards, including pool (e.g., eight-ball, nine-ball), snooker, and
+              carom (e.g., three-cushion billiards). Each variation has its own unique rules and playing styles.
+            </p>
+          <li class="list">
+            <h4>Professional Circuits:</h4>
+            <p>
+              Billiards has thriving professional circuits, with top players competing in tournaments around the world.
+              Events like the World Pool Championship, the World Snooker Championship, and the Mosconi Cup showcase the
+              highest levels of skill and competition in the sport.
+            </p>
+          <li class="list">
+            <h4>Accessibility:</h4>
+            <p>
+              While billiards has a competitive professional scene, it is also a widely enjoyed recreational activity.
+              People of all ages and skill levels can play billiards, making it a popular pastime in bars, clubs, and
+              homes worldwide.
+            </p>
+          <li class="list">
+            <h4>Mental and Physical Benefits:</h4>
+            <p>
+              Playing billiards can improve cognitive abilities such as focus, concentration, and problem-solving
+              skills. It also requires physical coordination and can be a fun way to socialize and relieve stress.
+            </p>
+          <li class="list">
+            <h4>Cultural Impact:</h4>
+            <p>
+              Billiards has left its mark on popular culture, appearing in numerous movies, TV shows, and works of
+              literature. It has also inspired artists and writers, becoming a symbol of skill, strategy, and
+              sophistication.
+            </p>
+        </ul>
+        <p class="paragraph">
+          Overall, billiards is a timeless and beloved sport with a rich history, diverse variations, and a global
+          community of players and fans.
+        </p>
+        </p>
+      </div>
+    </main>
+
+
+    <footer>Copyright&copy; Sportsinfo.com | All rights reserved</footer>
+  </div>
+</body>
+
+</html>

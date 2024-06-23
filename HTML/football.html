@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Info</title>
+    <link rel="stylesheet" href="/CSS/info.css" />
+    <link rel="stylesheet" href="/CSS/navbar.css" />
+    <link rel="stylesheet" href="/CSS/utilities.css" />
+    <link rel="stylesheet" href="/CSS/football.css">
+    <link rel="stylesheet" href="/CSS/searchbar.css">
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/JavaScript/main.js"></script>
+    <script src="/JavaScript/searchbar.js"></script>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <!-- navbar starts here -->
+      <div class="navbar flex justify-between item-center">
+        <!-- navbar is divided into 3 parts logo, search bar, sports + login/signup  -->
+        <!-- logo-container -->
+        <div class="logo-container flex navbar-item">
+          <h1 class="logo"><a href="/HTML/index.html">Sports Info</a></h1>
+          <img
+            src="/Assets/Images/bars-solid.svg"
+            alt=""
+            class="collapse menu-icon"
+          />
+        </div>
+        <!-- search-bar-container -->
+        <div
+          class="search-bar-container flex-col item-center navbar-item collapsed"
+        >
+        <div class="searchBar flex">
+          <input
+            class="mx-auto"
+            type="search"
+            id="search-bar"
+            onkeyup="myFunction()"
+            placeholder="   search any sport here"
+          />
+          <button id="search-button"><img src="/Assets/Images/magnifying-glass-solid.svg" alt="search icon" class="search-icon"></button>
+        </div>
+          <ul class="drop-down-lists" id="search-list">
+            <li><a href="/HTML/athletics.html" class="drop-down-list-item search-list-item">Athletics</a></li>
+            <li><a href="/HTML/badminton.html" class="drop-down-list-item search-list-item">Badminton</a></li>
+            <li><a href="/HTML/billiards.html" class="drop-down-list-item search-list-item">Billiards</a></li>
+            <li><a href="/HTML/chess.html" class="drop-down-list-item search-list-item">Chess</a></li>
+            <li><a href="/HTML/football.html" class="drop-down-list-item search-list-item">Football</a></li>
+            <li><a href="/HTML/golf.html" class="drop-down-list-item search-list-item">Golf</a></li>
+            <li><a href="/HTML/judo.html" class="drop-down-list-item search-list-item">Judo</a></li>
+            <li><a href="/HTML/motorcycle.html" class="drop-down-list-item search-list-item">Motorcycle Racing</a></li>
+            <li><a href="/HTML/swimming.html" class="drop-down-list-item search-list-item">Swimming</a></li>
+            <li><a href="/HTML/tennis.html" class="drop-down-list-item search-list-item">Tennis</a></li>
+            <li><a href="/HTML/volley.html" class="drop-down-list-item search-list-item">Volleyball</a></li>
+          </ul>
+        </div>
+        <!-- options-container -->
+        <ul
+          class="flex navbar-item item-center collapsed drop-down-container"
+        >
+          <li class="drop-btn" id="sports">
+            Sports
+            <img
+              src="/Assets/Images/chevron-down-solid.svg"
+              alt="drop-down-logo"
+              class="drop-down-logo"
+            />
+            <ul class="drop-down-list txt-center item-center mx-auto" id="sports-catagories">
+              <li>
+                <a href="/HTML/athletics.html" class="drop-down-list-item">Athletics</a>
+              </li>
+              <li>
+                <a href="/HTML/badminton.html" class="drop-down-list-item">Badminton</a>
+              </li>
+              <li>
+                <a href="/HTML/billiards.html" class="drop-down-list-item">Billiards</a>
+              </li>
+              <li><a href="/HTML/chess.html" class="drop-down-list-item">Chess</a></li>
+              <li><a href="/HTML/football.html" class="drop-down-list-item">Football</a></li>
+              <li><a href="/HTML/golf.html" class="drop-down-list-item">Golf</a></li>
+              <li><a href="/HTML/judo.html" class="drop-down-list-item">Judo</a></li>
+              <li>
+                <a href="/HTML/motorcycle.html" class="drop-down-list-item"
+                  >Motorcycle Racing</a
+                >
+              </li>
+              <li><a href="/HTML/swimming.html" class="drop-down-list-item">Swimming</a></li>
+              <li><a href="/HTML/tennis.html" class="drop-down-list-item">Tennis</a></li>
+              <li>
+                <a href="/HTML/volley.html" class="drop-down-list-item">Volleyball</a>
+              </li>
+            </ul>
+          </li>
+          <li class="drop-btn" id="options">More
+            <img src="/Assets/Images/chevron-down-solid.svg" alt="down arrow" class="drop-down-logo">
+            <ul class="drop-down-list" id="options-catagories">
+              <li><a href="/HTML/contact.html" class="drop-down-list-item">Contact us</a></li>
+              <li><a href="/HTML/about.html" class="drop-down-list-item">About us</a></li>
+            </ul>
+          </li>
+          <li class="sign-up"><a href="/HTML/signup.html"  class="" target="_blank">Sign Up</a></li>
+        </ul>
+      </div>
+      <main class="txt-center">
+        <div class="main-paragraph-container">
+        <h1 class="main-heading">Football</h1>
+        <p class="intro-paragraph">Football is a family of team sports where goal-scoring is achieved through kicking a ball to differing degrees. Without qualification, the term "football" often refers to the most widely played variation of the game in the context in which it is used. Football-related sports include association football.
+        </p>
+      </div>
+      <!--Insert slider/carousal here-->
+        <div class="paragraph-container">
+          <h3 class="sub-heading">History:</h3>
+          <p class="paragraph">Football was invented by ancient civilizations as a pass time, entertainment, and exercise. Each respective culture had its own unique rule sets and takes on the popular sport. Early football games were far from the organized and regulated sport we recognize today. Many of these games were often void of standardized rules.
+            </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Strategy of the game:</h3>
+          <p class="paragraph">In football, teams employ a variety of strategic approaches to outmaneuver opponents and create scoring opportunities while minimizing defensive vulnerabilities. These strategies encompass formations tailored to player strengths, possession-oriented play to control tempo, precise passing and movement to break down defenses, effective pressing to regain possession, counter-attacking to exploit transitions, and set-piece routines for scoring opportunities. Adaptability is key, with teams adjusting tactics based on match dynamics and opponent characteristics. Successful execution of these strategies demands tactical intelligence, skillful coordination, and cohesive teamwork, all aimed at achieving victory on the pitch.
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Rules of the game:</h3>
+          <p class="paragraph">In football, each team consists of 11 players aiming to score goals by maneuvering the ball into the opposing team's net. The game is played on a rectangular field with goalposts at each end. Players, except for the goalkeeper, cannot use their hands or arms to touch the ball; instead, they use their feet, head, or body to control and pass the ball. The match is divided into two halves, each lasting 45 minutes, with a halftime break. The team with the most goals at the end of the game wins. However, if the score is tied, the match may go into extra time or a penalty shootout to determine the winner, depending on the competition rules. Fouls, such as dangerous tackles or handballs, result in free kicks, penalties, or yellow and red cards, which can lead to player cautions or dismissals. Offside is another rule where players cannot be behind the last defender when the ball is played to them. The game is officiated by referees who enforce the rules and ensure fair play. Overall, football emphasizes skill, teamwork, and sportsmanship, making it one of the most widely enjoyed sports globally.
+        </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Players of the game:</h3>
+          <p class="paragraph">
+            In a football game, twenty-two players are on the pitch at any given moment. This includes eleven players from each of the two opposing teams, each with specific roles and duties. One of them takes on the crucial position of goalie, whose duties include guarding the team's goalpost and keeping the opposition from scoring. The other players are arranged tactically all over the field, with defenders trying to stop the opposition from making plays, midfielders setting up plays, and attackers trying to get past their defense and score goals. The complex relationships between these players, together with their talent, cunning, and teamwork, capture the allure of football and captivate spectators all over the world with its fluid and unexpected style.
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Popular World Cup:</h3>
+          <p class="paragraph">
+            As of the 2022 edition, 80 national teams have competed in the 22 final tournaments since the FIFA World Cup's establishment in 1930. The title has been won by eight national teams. Brazil is the only team with five victories to have competed in every tournament. The other World Cup victors are Germany and Italy with four titles apiece, England and Spain with one title each, Argentina with three titles, France and Uruguay, the inaugural winners, with two titles apiece.
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Counties that play the game:</h3>
+          <p class="paragraph">There is football in almost every nation on the planet. Several of the most well-known countries that play football are:
+            <ul class="list-container">
+              <li class="list">
+                Brazil
+              </li>
+              <li class="list">
+          Argentina
+              </li>
+              <li class="list">
+                Germany
+              </li>
+              <li class="list">England
+              </li>
+              <li class="list">
+Spain
+              </li>
+              <li class="list">
+Italy
+              </li>
+              <li class="list">
+France
+              </li>
+              <li class="list">
+Netherlands 
+              </li>
+              <li class="list">
+Portugal 
+              </li>
+              <li class="list">
+Uruguay
+              </li>
+              </ul>
+      <p class="paragraph">But football is not just played in these nations.  All continents from Europe to South America to Africa, Asia, and beyond have played and enjoyed it at some point. Every nation has its unique football culture, customs, and history, which adds to the sport's worldwide appeal and diversity.
+             </p>
+             </p>
+             </div>
+              <div class="paragraph-container">
+                <h3 class="sub-heading">
+                  Important Facts:
+                </h3>
+                <p class="paragraph">
+                  Football, renowned as the world's most popular sport, boasts a rich tapestry of historical significance, global appeal, and cultural influence. Originating in England during the 19th century, football's modern incarnation was formalized with the establishment of the Football Association (FA) in 1863. Since then, the sport has evolved into a global phenomenon, captivating billions of fans across continents and cultures. The FIFA World Cup stands as the pinnacle of international football, showcasing the talents of national teams every four years. With its emphasis on skill, teamwork, and strategy, football has earned the moniker "the beautiful game," captivating audiences with its artistry and excitement. Beyond its athletic prowess, football catalyzes social integration, community engagement, and cultural expression, embodying the spirit of unity and camaraderie. From grassroots development initiatives to professional leagues and women's football, the sport continues to inspire, empower, and unite people worldwide, transcending barriers and leaving an indelible mark on society.
+                </p>
+              </div>
+              
+
+<footer>Copyright&copy; Sportsinfo.com | All rights reserved</footer>
+
+</div>
+</body>
+</html>

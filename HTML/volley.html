@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volley Ball</title>
+  <link rel="stylesheet" href="/CSS/utilities.css" />
+  <link rel="stylesheet" href="/CSS/navbar.css" />
+  <link rel="stylesheet" href="/CSS/info.css" />
+  <link rel="stylesheet" href="/CSS/searchbar.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="/JavaScript/main.js"></script>
+  <script src="/JavaScript/searchbar.js"></script>
+</head>
+
+<body>
+  <div class="container mx-auto">
+    <!-- navbar starts here -->
+    <div class="navbar flex justify-between item-center">
+      <!-- navbar is divided into 3 parts logo, search bar, sports + login/signup  -->
+      <!-- logo-container -->
+      <div class="logo-container flex navbar-item">
+        <h1 class=""><a href="/HTML/index.html">Sports Info</a></h1>
+        <img src="/Assets/Images/bars-solid.svg" alt="" class="collapse menu-icon" />
+      </div>
+      <!-- search-bar-container -->
+      <div class="search-bar-container flex-col item-center navbar-item collapsed">
+        <div class="searchBar flex">
+          <input class="mx-auto" type="search" id="search-bar" onkeyup="myFunction()"
+            placeholder="   search any sport here" />
+          <button id="search-button"><img src="/Assets/Images/magnifying-glass-solid.svg" alt="search icon"
+              class="search-icon"></button>
+        </div>
+        <ul class="drop-down-lists" id="search-list">
+          <li><a href="/HTML/athletics.html" class="drop-down-list-item search-list-item">Athletics</a></li>
+          <li><a href="/HTML/badminton.html" class="drop-down-list-item search-list-item">Badminton</a></li>
+          <li><a href="/HTML/billiards.html" class="drop-down-list-item search-list-item">Billiards</a></li>
+          <li><a href="/HTML/chess.html" class="drop-down-list-item search-list-item">Chess</a></li>
+          <li><a href="/HTML/football.html" class="drop-down-list-item search-list-item">Football</a></li>
+          <li><a href="/HTML/golf.html" class="drop-down-list-item search-list-item">Golf</a></li>
+          <li><a href="/HTML/judo.html" class="drop-down-list-item search-list-item">Judo</a></li>
+          <li><a href="/HTML/motorcycle.html" class="drop-down-list-item search-list-item">Motorcycle Racing</a></li>
+          <li><a href="/HTML/swimming.html" class="drop-down-list-item search-list-item">Swimming</a></li>
+          <li><a href="/HTML/tennis.html" class="drop-down-list-item search-list-item">Tennis</a></li>
+          <li><a href="/HTML/volley.html" class="drop-down-list-item search-list-item">Volleyball</a></li>
+        </ul>
+      </div>
+      <!-- options-container -->
+      <ul class="flex navbar-item item-center collapsed drop-down-container">
+        <li class="drop-btn" id="sports">
+          Sports
+          <img src="/Assets/Images/chevron-down-solid.svg" alt="drop-down-logo" class="drop-down-logo" />
+          <ul class="drop-down-list txt-center item-center mx-auto" id="sports-catagories">
+            <li>
+              <a href="/HTML/athletics.html" class="drop-down-list-item">Athletics</a>
+            </li>
+            <li>
+              <a href="/HTML/badminton.html" class="drop-down-list-item">Badminton</a>
+            </li>
+            <li>
+              <a href="/HTML/billiards.html" class="drop-down-list-item">Billiards</a>
+            </li>
+            <li><a href="/HTML/chess.html" class="drop-down-list-item">Chess</a></li>
+            <li><a href="/HTML/football.html" class="drop-down-list-item">Football</a></li>
+            <li><a href="/HTML/golf.html" class="drop-down-list-item">Golf</a></li>
+            <li><a href="/HTML/judo.html" class="drop-down-list-item">Judo</a></li>
+            <li>
+              <a href="/HTML/motorcycle.html" class="drop-down-list-item">Motorcycle Racing</a>
+            </li>
+            <li><a href="/HTML/swimming.html" class="drop-down-list-item">Swimming</a></li>
+            <li><a href="/HTML/tennis.html" class="drop-down-list-item">Tennis</a></li>
+            <li>
+              <a href="/HTML/volley.html" class="drop-down-list-item">Volleyball</a>
+            </li>
+          </ul>
+        </li>
+        <li class="drop-btn" id="options">More
+          <img src="/Assets/Images/chevron-down-solid.svg" alt="down arrow" class="drop-down-logo">
+          <ul class="drop-down-list" id="options-catagories">
+            <li><a href="/HTML/contact.html" class="drop-down-list-item">Contact us</a></li>
+            <li><a href="/HTML/about.html" class="drop-down-list-item">About us</a></li>
+          </ul>
+        </li>
+        <li class="sign-up"><a href="/HTML/signup.html" class="" target="_blank">Sign Up</a></li>
+      </ul>
+    </div>
+    <main class="txt-center">
+      <div class="main-paragraph-container">
+        <h1 class="main-heading">Volley Ball</h1>
+        <p class="intro-paragraph">
+          A net separates the two teams of six players in the team sport of volleyball. Under set rules, each side
+          attempts to score points by putting the ball on the court of the other team. Since Tokyo 1964, it has been a
+          part of the official Olympic Summer Games schedule. Beach volleyball was added to the schedule for the 1996
+          Summer Olympics in Atlanta.
+
+        </p>
+      </div>
+      <!--Insert slider/carousal here-->
+      <div class="paragraph-container">
+        <h3 class="sub-heading">History:</h3>
+        <p class="paragraph">
+          The word "Mindonette," which comes from the game of badminton, was invented by William G. Morgan, a YMCA
+          physical education director in Holyoke, Massachusetts (USA), in December 1895. The game is meant to be played
+          indoors and can be played by any number of participants. Some of the features of the game were borrowed from
+          handball, baseball, and tennis. Basketball, another indoor activity that was becoming popular in the region,
+          was created just four years prior, ten miles (sixteen kilometers) away in Springfield, Massachusetts. For
+          senior YMCA members, Minette was intended to be a less aggressive indoor sport than basketball, although it
+          still required some physical exertion.
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Rules of the game:</h3>
+        <p class="paragraph">
+          The rules of volleyball govern the play of the game and ensure fair competition among teams. Here are the
+          basic rules of volleyball:
+        <ul class="list-container">
+          <li class="list">
+            <h4>Team Composition:</h4>
+            <p>
+              Volleyball is played between two teams, each consisting of six players on the court at a time.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Scoring:</h4>
+            <p>
+              Points are scored when the ball hits the ground within the opponent's court boundaries or when the
+              opposing team commits a fault. A rally scoring system is used, meaning a point is scored on every serve,
+              regardless of which team served.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Starting Play:</h4>
+            <p>
+              The game begins with a serve from behind the back boundary line. The serving team rotates clockwise each
+              time they win a rally and gain the right to serve.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Service:</h4>
+            <p>
+              The ball must be served over the net to the opposing team's court using an overhand or underhand motion.
+              The server must stand behind the back boundary line until making contact with the ball.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Playing the Ball:</h4>
+            <p>
+              Teams have three touches to return the ball over the net (except during a block). The most common sequence
+              is bump (forearm pass), set (overhead pass), and spike (attacking hit).
+            </p>
+          </li>
+          <li class="list">
+            <h4>Ball In Play:</h4>
+            <p>
+              The ball must pass over the net within three touches and must not touch the ground or any player outside
+              the boundaries during play.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Net Violations:</h4>
+            <p>
+              Players are not allowed to touch the net while the ball is in play. Additionally, players cannot reach
+              over the net to block or attack the ball unless it has crossed the net entirely.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Rotation:</h4>
+            <p>
+              Players rotate positions clockwise each time their team wins the serve. Rotation ensures equal
+              distribution of players' positions throughout the game.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Substitutions:</h4>
+            <p>
+              Substitutions are allowed during deadball situations and must be made through the designated substitution
+              zone.
+            </p>
+          </li>
+        </ul>
+        <p class="paragraph">
+          The International Volleyball Federation (FIVB) and other national governing organizations have established
+          these as the basic volleyball regulations. Fair play and a competitive but pleasurable volleyball experience
+          are ensured by comprehension and adherence to these regulations.
+        </p>
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Players of the game:</h3>
+        <p class="paragraph">
+          Two teams of six players each normally compete in volleyball matches on the same court. The typical format for
+          both indoor and beach volleyball is called "six-a-side" or "six-player" volleyball. Three positions at the net
+          (front row) and three positions at the rear of the court (back row) are assigned to each team.
+          <br>
+          In beach volleyball, there is also a two-player format, where each team consists of only two players. The
+          dynamics of the game change in two-player beach volleyball, as each player has to cover more area on the
+          court, and there are specific rule differences, such as each player having to serve and block. While the
+          standard formats involve six or two players per team, variations like "four-a-side" or "nine-a-side"
+          volleyball can be played for recreational or modified versions of the game, but the official and widely
+          recognized format is six players per team.
+          Here are some popular players:
+        <ul class="list-container">
+          <li class="list">
+            <h4><a href="" target="_blank">Karch Kiraly:</a></h4>
+            <p>
+              Karch Kiraly is widely regarded as one of the greatest volleyball players of all time. He excelled both
+              indoors and on the beach, winning Olympic gold medals in both disciplines. Kiraly's exceptional skills and
+              leadership have left an indelible mark on the sport.
+            </p>
+          </li>
+          <li class="list">
+            <h4><a href="" target="_blank">Misty May-Treanor:</a></h4>
+            <p>
+              Misty May-Treanor is a legendary beach volleyball player known for her dominant performances alongside her
+              partner Kerri Walsh Jennings. Together, they won three consecutive Olympic gold medals in beach volleyball
+              (2004, 2008, and 2012) and numerous other championships.
+            </p>
+          </li>
+          <li class="list">
+            <h4><a href="" target="_blank">Kerri Walsh Jennings:</a></h4>
+            <p>
+              Kerri Walsh Jennings is another iconic beach volleyball player, renowned for her formidable skills and
+              competitive spirit. With Misty May-Treanor, she formed one of the most successful partnerships in beach
+              volleyball history, capturing multiple Olympic gold medals and World Championships.
+            </p>
+          </li>
+          <li class="list">
+            <h4><a href="" target="_blank">Giba (Gilberto Amauri de Godoy Filho):</a></h4>
+            <p>
+              Giba is a Brazilian volleyball player who achieved great success during his career. As a member of the
+              Brazilian national team, Giba won numerous Olympic medals, including gold in 2004 and 2008, and multiple
+              World Championships. He is celebrated for his athleticism and dynamic playing style.
+            </p>
+          </li>
+        </ul>
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Strategy of the game:</h3>
+        <p class="paragraph">
+          Playing strategically is essential to succeeding on the volleyball court. To obtain an advantage over their
+          rivals, teams concentrate on a few crucial components. The basis for offensive plays is a solid serve
+          reception, and deft positioning allows the ball to be distributed precisely to attacking teammates. To take
+          advantage of the opponent's deficiencies, effective offensive methods combine quick sets, high sets, and
+          back-row attacks. On defense, well-executed blocking and quick digging are meant to stymie the opposition's
+          attack and prolong rallies.
+          <br>
+          To take advantage of scoring opportunities, teams must be able to transition quickly from defense to attack.
+          To facilitate coordinated movements, play calls, and encouragement, communication among teams is essential.
+          Scouting opponents also enables teams to recognize trends and patterns, which allows them to make adjustments.
+          Scouting rivals also enables teams to spot trends and patterns, which allows them to modify their tactics.
+          <br>
+          Teams need to be able to adjust to shifting momentum and shifting game scenarios, therefore adaptability is
+          essential. Volleyball teams can maximize their performance and aim for victory on the field by implementing
+          these strategic components into their match.
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Popular Tournaments:</h3>
+        <p class="paragraph">
+          One of the most prestigious and popular tournaments in volleyball is the FIVB Volleyball World Championship.
+          Held every four years for both men and women, the World Championship brings together the best national teams
+          from around the globe to compete for the title of world champion. With thrilling matches, intense rivalries,
+          and unparalleled athleticism, the World Championship captivates volleyball enthusiasts worldwide.
+          <br>
+          Another highly anticipated event is the Olympic Games volleyball tournament, where national teams vie for
+          gold, silver, and bronze medals on the world's biggest stage. The FIVB Volleyball Nations League (VNL) has
+          also gained significant popularity since its inception, featuring elite teams competing in a round-robin
+          format leading to a final tournament. These tournaments showcase the pinnacle of volleyball excellence,
+          celebrating teamwork, skill, and sportsmanship while captivating audiences with electrifying performances and
+          unforgettable moments on the court.
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">How many countries play the game:</h3>
+        <p class="paragraph">
+          Volleyball is one of the most popular team sports in the world, being practiced in many different nations.
+          Amateur and professional players alike find it appealing, and leagues, clubs, and tournaments are arranged in
+          almost every continent. Among the nations with long-standing volleyball traditions are Brazil, the US, Italy,
+          Russia, China, and Japan.
+          <br>
+          These countries have produced elite national teams that have excelled in international tournaments like the
+          World Cup, FIVB World Championships, and Olympic Games. Furthermore, volleyball's popularity and accessibility
+          have made it widely accepted in communities, schools, and leisure programs around the world, creating a
+          thriving and diversified volleyball community on a global scale.
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Important Facts:</h3>
+        <p class="paragraph">Here are some important facts about Volleyball:
+        <ul class="list-container">
+          <li class="list">
+            <h4>Origin:</h4>
+            <p>
+              Volleyball was invented in 1895 by William G. Morgan, a YMCA instructor in Massachusetts, USA. It was
+              initially called "mignonette" before being renamed volleyball due to the nature of the game, which
+              involved volleying a ball back and forth over a net.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Olympic Sport:</h4>
+            <p>
+              Volleyball made its Olympic debut at the 1964 Tokyo Games for men and the 1964 Tokyo Games for women. It
+              has since become one of the most popular Olympic sports, attracting millions of viewers worldwide during
+              the Olympic Games.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Two Main Variants:</h4>
+            <p>
+              Volleyball is played in two main variants: indoor volleyball and beach volleyball. Indoor volleyball is
+              played on a hard court, while beach volleyball is played on sand. Both variants have their unique rules
+              and strategies.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Six Players:</h4>
+            <p>
+              In both indoor and beach volleyball, each team typically consists of six players on the court at a time.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Rally Scoring:</h4>
+            <p>
+              Volleyball uses a rally scoring system, meaning a point is scored on every serve, regardless of which team
+              served. The first team to reach a certain number of points wins the set.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Libero Position:</h4>
+            <p>
+              In indoor volleyball, there is a specialized defensive player known as the libero. The libero wears a
+              different colored jersey and has specific rules regarding substitutions and playing actions.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Net Height:</h4>
+            <p>
+              The net height in men's volleyball is higher than in women's volleyball. In men's volleyball, the net
+              height is set at 2.43 meters (7 feet 11 5/8 inches), while in women's volleyball, it is set at 2.24 meters
+              (7 feet 4 1/8 inches).
+            </p>
+          </li>
+          <li class="list">
+            <h4>International Federation:</h4>
+            <p>
+              The International Volleyball Federation (FIVB) governs the sport of volleyball worldwide. It oversees
+              international competitions, sets rules and regulations, and promotes the growth and development of
+              volleyball globally.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Popularity:</h4>
+            <p>
+              Volleyball is one of the most popular team sports in the world, played by millions of people of all ages
+              and skill levels. It is enjoyed in schools, clubs, recreational leagues, and professional competitions
+              across the globe.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Skills and Strategy:</h4>
+            <p>
+              Volleyball requires a combination of skills, including serving, passing, setting, attacking, blocking, and
+              defense. Successful teams employ strategic gameplay, communication, and teamwork to outmaneuver their
+              opponents and win matches.
+            </p>
+          </li>
+        </ul>
+        </p>
+      </div>
+    </main>
+    <footer>Copyright&copy; Sportsinfo.com | All rights reserved</footer>
+  </div>
+</body>
+
+</html>

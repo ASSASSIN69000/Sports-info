@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Athletics</title>
+  <link rel="stylesheet" href="/CSS/utilities.css" />
+  <link rel="stylesheet" href="/CSS/navbar.css" />
+  <link rel="stylesheet" href="/CSS/info.css" />
+  <link rel="stylesheet" href="/CSS/searchbar.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="/JavaScript/main.js"></script>
+  <script src="/JavaScript/searchbar.js"></script>
+</head>
+
+<body>
+  <div class="container mx-auto">
+    <!-- navbar starts here -->
+    <div class="navbar flex justify-between item-center">
+      <!-- navbar is divided into 3 parts logo, search bar, sports + login/signup  -->
+      <!-- logo-container -->
+      <div class="logo-container flex navbar-item">
+        <h1 class=""><a href="/HTML/index.html">Sports Info</a></h1>
+        <img src="/Assets/Images/bars-solid.svg" alt="" class="collapse menu-icon" />
+      </div>
+      <!-- search-bar-container -->
+      <div class="search-bar-container flex-col item-center navbar-item collapsed">
+        <div class="searchBar flex">
+          <input class="mx-auto" type="search" id="search-bar" onkeyup="myFunction()"
+            placeholder="   search any sport here" />
+          <button id="search-button"><img src="/Assets/Images/magnifying-glass-solid.svg" alt="search icon"
+              class="search-icon"></button>
+        </div>
+        <ul class="drop-down-lists" id="search-list">
+          <li><a href="/HTML/athletics.html" class="drop-down-list-item search-list-item">Athletics</a></li>
+          <li><a href="/HTML/badminton.html" class="drop-down-list-item search-list-item">Badminton</a></li>
+          <li><a href="/HTML/billiards.html" class="drop-down-list-item search-list-item">Billiards</a></li>
+          <li><a href="/HTML/chess.html" class="drop-down-list-item search-list-item">Chess</a></li>
+          <li><a href="/HTML/football.html" class="drop-down-list-item search-list-item">Football</a></li>
+          <li><a href="/HTML/golf.html" class="drop-down-list-item search-list-item">Golf</a></li>
+          <li><a href="/HTML/judo.html" class="drop-down-list-item search-list-item">Judo</a></li>
+          <li><a href="/HTML/motorcycle.html" class="drop-down-list-item search-list-item">Motorcycle Racing</a></li>
+          <li><a href="/HTML/swimming.html" class="drop-down-list-item search-list-item">Swimming</a></li>
+          <li><a href="/HTML/tennis.html" class="drop-down-list-item search-list-item">Tennis</a></li>
+          <li><a href="/HTML/volley.html" class="drop-down-list-item search-list-item">Volleyball</a></li>
+        </ul>
+      </div>
+      <!-- options-container -->
+      <ul class="flex navbar-item item-center collapsed drop-down-container">
+        <li class="drop-btn" id="sports">
+          Sports
+          <img src="/Assets/Images/chevron-down-solid.svg" alt="drop-down-logo" class="drop-down-logo" />
+          <ul class="drop-down-list txt-center item-center mx-auto" id="sports-catagories">
+            <li>
+              <a href="/HTML/athletics.html" class="drop-down-list-item">Athletics</a>
+            </li>
+            <li>
+              <a href="/HTML/badminton.html" class="drop-down-list-item">Badminton</a>
+            </li>
+            <li>
+              <a href="/HTML/billiards.html" class="drop-down-list-item">Billiards</a>
+            </li>
+            <li><a href="/HTML/chess.html" class="drop-down-list-item">Chess</a></li>
+            <li><a href="/HTML/football.html" class="drop-down-list-item">Football</a></li>
+            <li><a href="/HTML/golf.html" class="drop-down-list-item">Golf</a></li>
+            <li><a href="/HTML/judo.html" class="drop-down-list-item">Judo</a></li>
+            <li>
+              <a href="/HTML/motorcycle.html" class="drop-down-list-item">Motorcycle Racing</a>
+            </li>
+            <li><a href="/HTML/swimming.html" class="drop-down-list-item">Swimming</a></li>
+            <li><a href="/HTML/tennis.html" class="drop-down-list-item">Tennis</a></li>
+            <li>
+              <a href="/HTML/volley.html" class="drop-down-list-item">Volleyball</a>
+            </li>
+          </ul>
+        </li>
+        <li class="drop-btn" id="options">More
+          <img src="/Assets/Images/chevron-down-solid.svg" alt="down arrow" class="drop-down-logo">
+          <ul class="drop-down-list" id="options-catagories">
+            <li><a href="/HTML/contact.html" class="drop-down-list-item">Contact us</a></li>
+            <li><a href="/HTML/about.html" class="drop-down-list-item">About us</a></li>
+            <!-- <li><a href="/HTML/write.html" class="drop-down-list-item">Write for us</a></li> -->
+          </ul>
+        </li>
+        <li class="sign-up"><a href="/HTML/signup.html" class="" target="_blank">Sign Up</a></li>
+      </ul>
+    </div>
+    <main class="txt-center">
+      <div class="main-paragraph-container">
+        <h1 class="main-heading">Athletics</h1>
+        <p class="intro-paragraph">
+          Athletics, a sport as ancient as human civilization itself, encompasses a vast array of disciplines showcasing
+          the pinnacle of physical prowess, speed, agility, strength, and endurance.
+          <br>
+          From the thundering footsteps of sprinters exploding out of the blocks to the graceful arcs of high jumpers
+          soaring over the bar, athletics captivates audiences worldwide with its raw power and finesse. Track and field
+          events, the core of athletics, include sprints, hurdles, middle and long-distance races, relays, jumps (such
+          as long jump, high jump, and triple jump), throws (like shot put, discus, javelin, and hammer throw), and
+          combined events like the decathlon and heptathlon.
+          <br>
+          Each event demands a unique blend of technique, athleticism, and mental fortitude, pushing athletes to their
+          limits in pursuit of personal and collective glory. Whether on the world stage of the Olympics, the hallowed
+          grounds of historic stadiums, or the humble tracks of local communities, athletics serves as a testament to
+          human potential and the enduring spirit of competition, inspiring generations to strive for greatness and
+          surpass the boundaries of what was once thought possible.
+        </p>
+      </div>
+      <!--Insert slider/carousal here-->
+      <div class="paragraph-container">
+        <h3 class="sub-heading">History:</h3>
+        <p class="paragraph">
+          The history of athletics is deeply intertwined with the evolution of human civilization. Dating back to
+          ancient times, athletics played a central role in various cultures, serving as a means of physical training,
+          religious expression, and social cohesion. In ancient Greece, athletic competitions were an integral part of
+          religious festivals, notably the Olympic Games, first held in Olympia in 776 BCE.
+          <br>
+          These early contests featured events like running, wrestling, boxing, and chariot racing, drawing athletes
+          from across the Greek world to compete for honor and prestige. The Romans later adopted and expanded upon
+          these traditions, organizing grand spectacles in colossal arenas such as the Circus Maximus.
+          <br>
+          With the decline of the Roman Empire, athletics faded from prominence in Europe but persisted in other
+          regions. In medieval England, for example, folk games like football and mob football provided outlets for
+          physical activity and community bonding.
+          <br>
+          The Renaissance witnessed a revival of interest in classical ideals, sparking a renewed enthusiasm for
+          athletics across Europe. The modern era of athletics began to take shape in the 19th century with the
+          establishment of formalized rules and competitions. The formation of athletic clubs and organizations, such as
+          the Amateur Athletic Club (AAC) in England and the New York Athletic Club (NYAC) in the United States, laid
+          the groundwork for the codification and standardization of various sports.
+          <br>
+          The late 19th and early 20th centuries saw the rise of international sporting events, including the revival of
+          the Olympic Games in 1896 under the leadership of Baron Pierre de Coubertin. This marked the beginning of
+          modern athletics on a global scale, with athletes from diverse nations coming together to compete in a spirit
+          of friendship and sportsmanship.
+          <br>
+          Since then, athletics has continued to evolve, with advancements in training methods, technology, and sports
+          science pushing the boundaries of human performance. Today, athletics remains one of the most popular and
+          revered sports worldwide, with a rich history that continues to inspire athletes and enthusiasts alike.
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Rules of the game:</h3>
+        <p class="paragraph">
+          The rules of athletics vary depending on the specific event, but there are some general principles and
+          regulations that apply across most disciplines. These rules are established by international governing bodies
+          such as World Athletics (formerly known as the International Association of Athletics Federations, or IAAF)
+          and are implemented at all levels of competition, from local meets to the Olympic Games.
+          <br>
+          Common rules in athletics include guidelines for equipment, such as specifications for track surfaces, field
+          dimensions, and implements used in throwing events like shot put or javelin. Athletes are also required to
+          adhere to rules regarding their attire, including uniform regulations and restrictions on
+          performance-enhancing equipment.
+          <br>
+          In terms of competition rules, events are typically governed by specific regulations regarding starting
+          procedures, race tactics, fouls, and disqualifications. For example, in sprinting events, false starts are
+          penalized with disqualification, while in distance running, athletes must stay within their assigned lanes for
+          a certain distance after the start of the race. In field events like the long jump or high jump, athletes must
+          adhere to strict take-off points and landing zones to ensure fair competition.
+          <br>
+          Additionally, rules regarding doping and anti-doping measures are crucial in athletics to maintain the
+          integrity of the sport and protect the health and safety of athletes. Drug testing procedures are conducted
+          regularly, and athletes found to have violated anti-doping regulations face sanctions ranging from suspensions
+          to lifetime bans from competition.
+          <br>
+          Overall, adherence to these rules ensures fair play, safety, and the preservation of the spirit of athletics
+          as a test of natural talent, skill, and determination.
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Popular players:</h3>
+        <p class="paragraph">
+          The number of players required to participate in athletics events varies depending on the specific discipline.
+          Some events, such as sprinting, hurdling, and jumping, are individual sports where only one athlete competes
+          at a time. In contrast, relay races involve teams of four athletes passing a baton around a track. Field
+          events like shot put, discus throw, and javelin throw typically involve one athlete competing at a time, but
+          multiple athletes may compete simultaneously in the same event.
+          <br>
+          In team sports like basketball or soccer, the number of players required is fixed, with specific rules
+          governing team size and substitutions. However, in athletics, the number of participants can vary widely
+          depending on the event, ranging from solo performances to team relays.
+          <br>
+          Here are some popular players:
+          <br>
+          In athletics, rather than referring to individual players, it's more common to highlight standout athletes who
+          excel in various events. Here are seven popular and accomplished athletes across different disciplines:
+        <ul class="list-container">
+          <li class="list">
+            <h4><a href="">Usain Bolt (Jamaica)</a></h4>
+            <p>Legendary sprinter, holds world records in the 100m and 200m.</p>
+          </li>
+          <li class="list">
+            <h4><a href="">Eliud Kipchoge (Kenya)</a></h4>
+            <p>Renowned marathon runner, Olympic gold medalist, and first person to run a marathon in under 2 hours.</p>
+          </li>
+          <li class="list">
+            <h4><a href="">Allyson Felix (United States)</a></h4>
+            <p>Decorated sprinter and long sprint specialist, holds multiple Olympic gold medals.</p>
+          </li>
+          <li class="list">
+            <h4><a href="">Renaud Lavillenie (France)</a></h4>
+            <p>Pole vault world record holder and Olympic gold medalist.</p>
+          </li>
+        </ul>
+        <p class="paragraph">
+          These athletes have not only achieved remarkable success in their respective events but have also captivated
+          audiences around the world with their performances and dedication to the sport.
+        </p>
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Strategy of the game:</h3>
+        <p class="paragraph">
+          In athletics, strategy varies greatly depending on the specific event. Here's a general overview of strategies
+          employed in different types of events:
+        <ul class="list-container">
+          <li class="list">
+            <h4>Sprints:</h4>
+            <p>Sprinters focus on explosive starts, maintaining maximum velocity through the race, and leaning across
+              the finish line for optimal results. The strategy involves pacing, maintaining form, and reacting swiftly
+              to the starter's gun.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Distance Races:</h4>
+            <p>Endurance and pacing are crucial in longer races such as the 800m, 1500m, or marathon. Athletes often
+              employ tactics like drafting behind competitors, surging to break away from the pack, or conserving energy
+              until the final stretch.</p>
+          </li>
+          <li class="list">
+            <h4>Hurdles:</h4>
+            <p>Hurdling involves maintaining speed while clearing obstacles. Athletes strategize by finding a rhythm
+              between sprinting and hurdling, adjusting stride lengths, and timing their jumps to minimize disruption to
+              their momentum.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Jumps:</h4>
+            <p>Jumpers aim to achieve maximum distance or height while adhering to specific take-off points or bar
+              heights. The strategy involves mastering technique, generating optimal speed and power during the
+              approach, and timing the jump or vault for maximum efficiency.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Throws:</h4>
+            <p>Throwers focus on generating maximum force and achieving optimal angles to propel implements like shot
+              puts discuses, or javelins. The strategy involves mastering throwing techniques, utilizing momentum from
+              the rotational or linear motion, and adjusting for factors like wind and weather conditions.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Relays:</h4>
+            <p>Relay teams strategize on baton exchanges, typically aiming for seamless transitions to maintain momentum
+              and minimize time lost during handoffs. Athletes also plan race tactics, such as positioning their fastest
+              runners on specific legs or conserving energy for the final stretch.
+            </p>
+          </li>
+        </ul>
+        <p class="paragraph">
+          Overall, a successful athletic strategy involves a combination of physical preparation, technical proficiency,
+          mental focus, and adaptability to changing conditions during competition. Athletes and coaches often analyze
+          opponents, course layouts, and environmental factors to develop effective strategies tailored to each event.
+        </p>
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Popular tournament:</h3>
+        <p class="paragraph">
+          One popular athletics tournament is the World Athletics Championships. Held every two years, this prestigious
+          event brings together top athletes from around the globe to compete in a wide range of track and field
+          disciplines. Organized by World Athletics (formerly known as the International Association of Athletics
+          Federations, or IAAF), the World Championships showcase the pinnacle of athletic talent and serve as a
+          platform for athletes to vie for world titles and set new records.
+          <br>
+          The tournament features events such as sprints, distance races, hurdles, jumps, throws, and relays, providing
+          a comprehensive showcase of athletic excellence. With a rich history and a global audience, the World
+          Athletics Championships stand as one of the most anticipated and celebrated events in the world of athletics.
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">How many countries play the game:</h3>
+        <p class="paragraph">
+          Athletics, as a sport, is practiced in virtually every country around the world. It is one of the most
+          universal sports, with participation spanning across continents and cultures. Athletes from countries of all
+          sizes and levels of development take part in athletics competitions, from the largest and most populous
+          nations to small island nations.
+          <br>
+          The diversity of participants adds to the richness of the sport, with each country contributing its own talent
+          and cultural influences to the global athletics community. Therefore, it's safe to say that hundreds of
+          countries participate in athletics in various capacities, making it truly a global sport.
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Important facts:</h3>
+        <p class="paragraph">
+          Here are some interesting and important facts about athletics:
+        <ul class="list-container">
+          <li class="list">
+            <h4>Ancient Origins:</h4>
+            <p>
+              Athletics traces its roots back to ancient civilizations, particularly ancient Greece, where competitions
+              like the Olympic Games were held as early as 776 BCE.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Modern Olympics:</h4>
+            <p>
+              Athletics has been a core part of the modern Olympic Games since their revival in 1896, and it remains one
+              of the most prominent and widely watched sports in the Olympics.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Usain Bolt's Dominance: </h4>
+            <p>Jamaican sprinter Usain Bolt is widely regarded as one of the greatest athletes of all time. He holds the
+              world records in the 100 meters and 200 meters and won eight Olympic gold medals during his illustrious
+              career.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Gender Equality:</h4>
+            <p>
+              Athletics has been at the forefront of promoting gender equality in sports. Events like the women's
+              marathon were added to the Olympic program in the late 20th century, and women now compete in the same
+              events as men at major championships.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Paralympic Athletics:</h4>
+            <p>
+              Athletics is also a key component of the Paralympic Games, where athletes with physical disabilities
+              compete in events such as wheelchair racing, seated throws, and visually impaired running events.
+            </p>
+          </li>
+          <li class="list">
+            <h4>East African Dominance:</h4>
+            <p>
+              Countries like Kenya and Ethiopia have long-dominated distance running events, producing numerous
+              world-class athletes who excel in events like the 5000 meters, 10,000 meters, and marathon.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Technological Advances:</h4>
+            <p>
+              Athletics has seen significant advancements in technology, from the development of lightweight and
+              aerodynamic footwear to the use of advanced performance tracking and analysis tools to optimize training
+              and technique.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Anti-Doping Efforts:</h4>
+            <p>
+              Athletics has been proactive in combating doping in sports, with extensive anti-doping measures in place
+              to ensure fair competition and protect the integrity of the sport.
+            </p>
+          </li>
+        </ul>
+        <p class="paragraph">
+          These facts highlight the rich history, global appeal, and ongoing evolution of athletics as a sport.
+        </p>
+        </p>
+      </div>
+    </main>
+    <footer>Copyright&copy; Sportsinfo.com | All rights reserved</footer>
+  </div>
+</body>
+
+</html>

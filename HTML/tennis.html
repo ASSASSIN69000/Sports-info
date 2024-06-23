@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tennis</title>
+    <link rel="stylesheet" href="/CSS/utilities.css" />
+    <link rel="stylesheet" href="/CSS/navbar.css" />
+    <link rel="stylesheet" href="/CSS/info.css" />
+    <link rel="stylesheet" href="/CSS/searchbar.css">
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/JavaScript/main.js"></script>
+    <script src="/JavaScript/searchbar.js"></script>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <!-- navbar starts here -->
+      <div class="navbar flex justify-between item-center">
+        <!-- navbar is divided into 3 parts logo, search bar, sports + login/signup  -->
+        <!-- logo-container -->
+        <div class="logo-container flex navbar-item">
+          <h1 class=""><a href="/HTML/index.html">Sports Info</a></h1>
+          <img
+            src="/Assets/Images/bars-solid.svg"
+            alt=""
+            class="collapse menu-icon"
+          />
+        </div>
+        <!-- search-bar-container -->
+        <div
+          class="search-bar-container flex-col item-center navbar-item collapsed"
+        >
+        <div class="searchBar flex">
+          <input
+            class="mx-auto"
+            type="search"
+            id="search-bar"
+            onkeyup="myFunction()"
+            placeholder="   search any sport here"
+          />
+          <button id="search-button"><img src="/Assets/Images/magnifying-glass-solid.svg" alt="search icon" class="search-icon"></button>
+        </div>
+          <ul class="drop-down-lists" id="search-list">
+            <li><a href="/HTML/athletics.html" class="drop-down-list-item search-list-item">Athletics</a></li>
+            <li><a href="/HTML/badminton.html" class="drop-down-list-item search-list-item">Badminton</a></li>
+            <li><a href="/HTML/billiards.html" class="drop-down-list-item search-list-item">Billiards</a></li>
+            <li><a href="/HTML/chess.html" class="drop-down-list-item search-list-item">Chess</a></li>
+            <li><a href="/HTML/football.html" class="drop-down-list-item search-list-item">Football</a></li>
+            <li><a href="/HTML/golf.html" class="drop-down-list-item search-list-item">Golf</a></li>
+            <li><a href="/HTML/judo.html" class="drop-down-list-item search-list-item">Judo</a></li>
+            <li><a href="/HTML/motorcycle.html" class="drop-down-list-item search-list-item">Motorcycle Racing</a></li>
+            <li><a href="/HTML/swimming.html" class="drop-down-list-item search-list-item">Swimming</a></li>
+            <li><a href="/HTML/tennis.html" class="drop-down-list-item search-list-item">Tennis</a></li>
+            <li><a href="/HTML/volley.html" class="drop-down-list-item search-list-item">Volleyball</a></li>
+          </ul>
+        </div>
+        <!-- options-container -->
+        <ul
+          class="flex navbar-item item-center collapsed drop-down-container"
+        >
+          <li class="drop-btn" id="sports">
+            Sports
+            <img
+              src="/Assets/Images/chevron-down-solid.svg"
+              alt="drop-down-logo"
+              class="drop-down-logo"
+            />
+            <ul class="drop-down-list txt-center item-center mx-auto" id="sports-catagories">
+              <li>
+                <a href="/HTML/athletics.html" class="drop-down-list-item">Athletics</a>
+              </li>
+              <li>
+                <a href="/HTML/badminton.html" class="drop-down-list-item">Badminton</a>
+              </li>
+              <li>
+                <a href="/HTML/billiards.html" class="drop-down-list-item">Billiards</a>
+              </li>
+              <li><a href="/HTML/chess.html" class="drop-down-list-item">Chess</a></li>
+              <li><a href="/HTML/football.html" class="drop-down-list-item">Football</a></li>
+              <li><a href="/HTML/golf.html" class="drop-down-list-item">Golf</a></li>
+              <li><a href="/HTML/judo.html" class="drop-down-list-item">Judo</a></li>
+              <li>
+                <a href="/HTML/motorcycle.html" class="drop-down-list-item"
+                  >Motorcycle Racing</a
+                >
+              </li>
+              <li><a href="/HTML/swimming.html" class="drop-down-list-item">Swimming</a></li>
+              <li><a href="/HTML/tennis.html" class="drop-down-list-item">Tennis</a></li>
+              <li>
+                <a href="/HTML/volley.html" class="drop-down-list-item">Volleyball</a>
+              </li>
+            </ul>
+          </li>
+          <li class="drop-btn" id="options">More
+            <img src="/Assets/Images/chevron-down-solid.svg" alt="down arrow" class="drop-down-logo">
+            <ul class="drop-down-list" id="options-catagories">
+              <li><a href="/HTML/contact.html" class="drop-down-list-item">Contact us</a></li>
+              <li><a href="/HTML/about.html" class="drop-down-list-item">About us</a></li>
+            </ul>
+          </li>
+          <li class="sign-up"><a href="/HTML/signup.html"  class="" target="_blank">Sign Up</a></li>
+        </ul>
+      </div>
+      <main class="txt-center">
+        <div class="main-paragraph-container">
+        <h1 class="main-heading">Tennis</h1>
+        <p class="intro-paragraph">
+          Tennis is a racket sport that is played either individually against a single opponent (singles) or between two teams of two players each (doubles). Each player uses a tennis racket that is strung with a cord to strike a hollow rubber ball covered with felt over or around a net and into the opponent's court. The object of the game is to maneuver the ball in such a way that the opponent is not able to play a valid return. The player who is unable to return the ball validly will not gain a point, while the opposite player will.
+
+        </p>
+      </div>
+      <!--Insert slider/carousal here-->
+        <div class="paragraph-container">
+          <h3 class="sub-heading">History:</h3>
+          <p class="paragraph">
+            The history of tennis spans centuries, with origins rooted in ancient civilizations and the evolution of the modern game stemming from medieval Europe. Real tennis, played indoors with unique equipment and rules, gave way to lawn tennis in 19th-century England, spurred by Major Walter Clopton Wingfield's innovation and the standardization of courts and equipment. The sport gained global popularity through events like Wimbledon and the establishment of formal governing bodies like the International Tennis Federation (ITF). The Open Era, inaugurated in 1968, revolutionized tennis by allowing both amateurs and professionals to compete in major tournaments, ushering in increased competition and global recognition. Today, tennis stands as a universal sport played and watched by millions worldwide across amateur and professional levels, with Grand Slam tournaments like the Australian Open, French Open, Wimbledon, and US Open serving as pinnacle events in the tennis calendar.
+            </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Rules of the game:</h3>
+          <p class="paragraph">
+            The rules of tennis are relatively straightforward and are designed to ensure fair play and competitive matches. Here's a summary of the basic rules:
+            <ul class="list-container">
+              <li class="list">
+                <h4>Scoring:</h4>
+                <p>
+                  Tennis matches are typically played in sets, with each set consisting of games, and each game comprising points. To win a game, a player must score four points and have a two-point advantage over their opponent. The points are counted as follows: 15, 30, 40, and then game point. If both players reach 40 (known as a deuce), one player must win two consecutive points to win the game.
+  
+                </p>
+              </li>
+              <li class="list">
+                <h4>Serving:</h4>
+                <p>
+                  The player who serves alternates between points and games. The server must stand behind the baseline and hit the ball into the diagonally opposite service box on the other side of the net. The server gets two chances (first and second serve) to start each point. If the serve hits the net and lands in the correct service box, it's called a lot, and the server gets to serve again without penalty.
+
+                </p>
+              </li>
+              <li class="list">
+                <h4>Court Dimensions:</h4>
+                <p>
+                  The tennis court is divided into two halves by a net. Each half is further divided into service boxes and a larger area called the court. The lines on the court are considered in play.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Scoring Sets:</h4>
+                <p>
+                  A set is won by the player who is the first to win at least six games and has a two-game lead over their opponent. If the set reaches a tie at 6-6, a tiebreaker is usually played to determine the winner of the set. In a tiebreaker, the first player to reach at least seven points with a two-point advantage wins the tiebreaker and the set. 
+                </p>
+              </li>
+              <li class="list">
+                <h4>Winning the Match:</h4>
+                <p>Matches are typically played as the best of three sets for women and the best of five sets for men in most professional tournaments. To win the match, a player must win the specified number of sets before their opponent.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Other Rules:</h4>
+                <p>
+                  There are various other rules governing aspects such as let serves, foot faults, out-of-bounds shots, and interference during play. Players are expected to adhere to the code of conduct and sportsmanship principles during matches.
+                </p>
+              </li>
+            </ul>
+            <p class="paragraph">
+              These are the fundamental rules of tennis, though there are more nuanced regulations that govern professional matches and tournaments, including rules regarding coaching, time violations, and medical timeouts.
+            </p>
+            </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Players of the game:</h3>
+          <p class="paragraph">
+            Tennis can be played in two formats: singles and doubles.
+<br>
+Here are some popular players:
+            <ul class="list-container">
+          <li class="list">
+            <h4><a href="https://en.wikipedia.org/wiki/Roger_Federer" target="_blank">Roger Federer (Switzerland):</a></h4>
+            <p>
+              Federer is widely regarded as one of the greatest tennis players of all time. With a graceful playing style and 20 Grand Slam singles titles to his name, he has captivated fans around the world.
+            </p>
+          </li>
+          <li class="list">
+            <h4><a href="https://en.wikipedia.org/wiki/Serena_Williams" target="_blank">Serena Williams (United States):</a></h4>
+            <p>Serena Williams is an iconic figure in tennis, known for her powerful serves and aggressive playing style. She has won 23 Grand Slam singles titles, making her one of the most successful female players in history.
+            </p>
+          </li>
+          <li class="list">
+            <h4><a href="https://en.wikipedia.org/wiki/Rafael_Nadal" target="_blank">Rafael Nadal (Spain):</a></h4>
+            <p>Nadal, also known as the "King of Clay," has dominated the tennis world with his incredible success on clay courts. With 20 Grand Slam singles titles, including a record 13 French Open titles, he is considered one of the greatest clay-court players of all time.
+            </p>
+          </li>
+          <li class="list">
+            <h4><a href="https://en.wikipedia.org/wiki/Naomi_Osaka" target="_blank">Naomi Osaka (Japan):</a></h4><p>
+              Osaka has quickly risen to prominence in the tennis world with her powerful game and calm demeanor on the court. She has won multiple Grand Slam singles titles and has become a trailblazer for diversity and mental health awareness in the sport.
+            </p>
+          </li>
+        </ul>
+        <p class="paragraph">
+          These players have not only achieved remarkable success on the court but have also made significant contributions to the sport, inspiring fans around the world with their talent and dedication.
+        </p>
+        </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Strategy of the game:</h3>
+          <p class="paragraph">
+            Tennis is a game of strategy as much as it is a test of physical skill. Here are some key strategic elements players often employ during a match:
+            <ul class="list-container">
+              <li class="list">
+                <h4>Serve and Return: </h4>
+                <p>The serve is a player's first opportunity to gain an advantage in a point. Players often strategize about placement, speed, and spin to set up their next shot. On the other hand, returning players aim to neutralize the serve and gain control of the point.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Shot Selection:</h4>
+                <p>Players must decide whether to hit the ball with power, spin, or placement, depending on their position on the court and their opponent's weaknesses. They may also use drop shots, lobs, and slices to keep their opponents off balance.</p>
+              </li>
+              <li class="list">
+                <h4>Court Positioning:</h4>
+                <p>Players strategically position themselves on the court to anticipate their opponent's shots and cover the most likely areas the ball will be returned to. They may aim to take control of the center of the court or move closer to the net to put pressure on their opponent.</p>
+              </li>
+              <li class="list">
+                <h4>Playing to Strengths:</h4>
+                <p>Players often play to their strengths by hitting shots that capitalize on their best skills. For example, a player with a strong forehand may look to dictate play with aggressive shots to that side of the court.</p>
+              </li>
+              <li class="list">
+                <h4>Adapting to Opponent:</h4>
+                <p>Successful players can adapt their strategy based on their opponent's playing style and weaknesses. They may change the pace, spin, or placement of their shots to exploit vulnerabilities or disrupt their opponent's rhythm.</p>
+              </li>
+              <li class="list">
+                <h4>Mental Toughness:</h4>
+                <p>Tennis matches can be mentally demanding, and maintaining focus and composure is essential. Players must stay mentally tough during difficult situations, such as facing break points or serving to stay in the match.</p>
+              </li>
+              <li class="list">
+                <h4>Fitness and Endurance:</h4>
+                <p>Tennis matches can be physically demanding, especially in long rallies and extended matches. Players must maintain their fitness and endurance to perform at their best throughout the match.</p>
+              </li>
+            </ul>
+            <p class="paragraph">
+              Overall, a successful tennis strategy involves a combination of skill, anticipation, adaptability, and mental toughness. Players who can effectively execute their game plan while adjusting to the flow of the match are often the most successful on the court.
+            </p>
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Popular tournament:</h3>
+          <p class="paragraph">
+            Tennis boasts several prestigious tournaments that are considered among the most popular and eagerly anticipated events in the sport. Here are some of the most renowned tennis tournaments:
+            <ul class="list-container">
+              <li class="list">
+                <h4>Grand Slam Tournaments:</h4>
+                <p><h5>Australian Open:</h5>Held annually in Melbourne, Australia, typically in January, the Australian Open kicks off the Grand Slam calendar year. It is known for its intense summer heat and the Plexicushion surface.</p>
+                <p><h5>French Open (Roland Garros): </h5>Taking place in Paris, France, typically in May and June, the French Open is renowned for its red clay courts and demanding playing conditions.
+                </p>
+                <p><h5>Wimbledon:</h5>The oldest tennis tournament in the world, Wimbledon is held in London, United Kingdom, during late June and early July. It is famous for its grass courts and strict dress code.</p>
+                <p><h5>US Open:</h5>Held in New York City, United States, in late August and early September, the US Open is known for its hard courts and electric atmosphere, particularly during night matches</p>
+              </li>
+              <li class="list">
+                <h4>ATP Tour Masters 1000 and WTA 1000 Events: </h4>
+                <p>These tournaments are part of the ATP Tour and WTA Tour and include prestigious events such as the Indian Wells Masters, Miami Open, Monte-Carlo Masters, Madrid Open, Italian Open, and the Shanghai Masters. They are named as such because the winner receives 1000 ranking points.</p>
+              </li>
+              <li class="list">
+                <h4>ATP Finals and WTA Finals:</h4>
+                <p>The ATP Finals and WTA Finals feature the top eight men's and women's players, respectively, based on their performance throughout the season. These events serve as the season-ending championships and are held in rotating cities.</p>
+              </li>
+              <li class="list">
+                <h4>Davis Cup and Fed Cup:</h4>
+                <p>These are international team events for men (Davis Cup) and women (Fed Cup), respectively. Nations compete against each other in a series of matches, with the winners progressing through the tournament to eventually lift the trophy.
+                </p>
+              </li>
+            </ul>
+            <p class="paragraph">
+              These tournaments draw millions of viewers worldwide and feature the top players competing for prestigious titles and prize money. They are not only significant for players but also fans and the sport of tennis as a whole, showcasing the highest level of competition and skill.
+            </p> 
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">How many countries play the game:</h3>
+          <p class="paragraph">Tennis is a globally popular sport played in countries all around the world, making it one of the most widely participated sports. Its accessibility, whether in local clubs, schools, or professional circuits, has led to its widespread appeal. From its origins in England to its expansion across Europe, North and South America, Asia, Africa, and Oceania, tennis has established a significant presence in virtually every corner of the globe. Countries of all sizes and levels of development participate in tennis, ranging from major powerhouse nations with robust professional circuits to smaller countries with growing tennis communities. The sport's inclusivity and adaptability have contributed to its popularity, fostering a diverse and vibrant tennis culture that continues to evolve and thrive internationally. Moreover, initiatives such as grassroots programs, international tournaments, and the Olympic Games have further encouraged global participation in tennis, making it a truly universal sport that transcends borders and cultures.
+          </p>
+        </div>
+        <div class="paragraph-container">
+          <h3 class="sub-heading">Important Facts:</h3>
+          <p class="paragraph">Here are some important facts about tennis:
+            <ul class="list-container">
+              <li class="list">
+                <h4>Origins:</h4>
+                <p>
+                  Tennis originated from a French word, "tenez," which means "take heed" or "attention," reflecting its roots in a medieval handball game played in France.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Modern Tennis:</h4>
+                <p>
+                  The modern game of tennis evolved from "lawn tennis," which was first played in England during the late 19th century. Major Walter Clopton Wingfield is credited with developing the first standardized rules for lawn tennis in 1873.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Grand Slam Tournaments:</h4>
+                <p>
+                  : The four Grand Slam tournaments are the most prestigious events in tennis: the Australian Open, French Open (Roland Garros), Wimbledon, and US Open. Winning all four in a single calendar year is known as the Grand Slam.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Tennis Scoring:</h4>
+                <p>
+                  Tennis scoring is unique. The sequence is 15, 30, 40, and then the game. If both players or teams have 40 points, it's called "deuce," and a player must win two consecutive points to win the game.
+                </p>
+              </li>
+              <li class="list">
+                <h4>Equipment:</h4>
+                <p>
+                  Tennis players use a racket to hit a felt-covered rubber ball over a net. The type of court surface (grass, clay, hard, or carpet) can significantly affect gameplay, strategy, and player performance.
+
+                </p>
+              </li>
+              <li class="list">
+                <h4>Professional Tours:</h4>
+                <p>
+                  The Association of Tennis Professionals (ATP) governs the men's professional tennis circuit, while the Women's Tennis Association (WTA) oversees the women's circuit. Both tours consist of a series of tournaments held around the world, culminating in season-ending championships.
+
+                </p>
+              </li>
+              <li class="list">
+                <h4>Olympic Sport:</h4>
+                <p>
+                  Tennis is an Olympic sport, with singles and doubles competitions for both men and women. Tennis was reintroduced to the Olympics in 1988 after a 64-year hiatus.
+
+                </p>
+              </li>
+              <li class="list">
+                <h4>Tennis Legends: </h4>
+                <p>
+                  Throughout its history, tennis has produced many legendary players such as Roger Federer, Serena Williams, Rafael Nadal, Steffi Graf, Pete Sampras, Martina Navratilova, and many others who have left an indelible mark on the sport.
+                </p>
+              </li>
+            </ul>
+            <p class="paragraph">
+              These facts highlight the rich history, unique characteristics, and global appeal of tennis as a sport enjoyed by millions of players and fans worldwide. 
+  
+            </p>
+            </p>
+        </div>
+      </main>
+<footer>Copyright&copy; Sportsinfo.com | All rights reserved</footer>
+</div>
+</body>
+</html>

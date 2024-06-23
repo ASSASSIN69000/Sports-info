@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sports Info</title>
+  <link rel="stylesheet" href="/CSS/utilities.css" />
+  <link rel="stylesheet" href="/CSS/navbar.css" />
+  <link rel="stylesheet" href="/CSS/styles.css" />
+  <link rel="stylesheet" href="/CSS/slider.css">
+  <link rel="stylesheet" href="/CSS/searchbar.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="/JavaScript/main.js"></script>
+  <script src="/JavaScript/searchbar.js"></script>
+
+</head>
+
+<body>
+  <div class="container mx-auto">
+    <!-- navbar starts here -->
+    <div class="navbar flex justify-between item-center">
+      <!-- navbar is divided into 3 parts logo, search bar, sports + login/signup  -->
+      <!-- logo-container -->
+      <div class="logo-container flex navbar-item">
+        <h1 class=""><a href="/HTML/index.html">Sports Info</a></h1>
+        <img src="/Assets/Images/bars-solid.svg" alt="" class="collapse menu-icon" />
+      </div>
+      <!-- search-bar-container -->
+      <div class="search-bar-container flex-col item-center navbar-item collapsed">
+        <div class="searchBar flex">
+          <input class="mx-auto" type="search" id="search-bar" onkeyup="myFunction()"
+            placeholder="   search any sport here" />
+          <button id="search-button"><img src="/Assets/Images/magnifying-glass-solid.svg" alt="search icon"
+              class="search-icon"></button>
+        </div>
+        <ul class="drop-down-lists" id="search-list">
+          <li><a href="/HTML/athletics.html" class="drop-down-list-item search-list-item">Athletics</a></li>
+          <li><a href="/HTML/badminton.html" class="drop-down-list-item search-list-item">Badminton</a></li>
+          <li><a href="/HTML/billiards.html" class="drop-down-list-item search-list-item">Billiards</a></li>
+          <li><a href="/HTML/chess.html" class="drop-down-list-item search-list-item">Chess</a></li>
+          <li><a href="/HTML/football.html" class="drop-down-list-item search-list-item">Football</a></li>
+          <li><a href="/HTML/golf.html" class="drop-down-list-item search-list-item">Golf</a></li>
+          <li><a href="/HTML/judo.html" class="drop-down-list-item search-list-item">Judo</a></li>
+          <li><a href="/HTML/motorcycle.html" class="drop-down-list-item search-list-item">Motorcycle Racing</a></li>
+          <li><a href="/HTML/swimming.html" class="drop-down-list-item search-list-item">Swimming</a></li>
+          <li><a href="/HTML/tennis.html" class="drop-down-list-item search-list-item">Tennis</a></li>
+          <li><a href="/HTML/volley.html" class="drop-down-list-item search-list-item">Volleyball</a></li>
+        </ul>
+      </div>
+      <!-- options-container -->
+      <ul class="flex navbar-item item-center collapsed drop-down-container">
+        <li class="drop-btn" id="sports">
+          Sports
+          <img src="/Assets/Images/chevron-down-solid.svg" alt="drop-down-logo" class="drop-down-logo" />
+          <ul class="drop-down-list txt-center item-center mx-auto" id="sports-catagories">
+            <li>
+              <a href="/HTML/athletics.html" class="drop-down-list-item">Athletics</a>
+            </li>
+            <li>
+              <a href="/HTML/badminton.html" class="drop-down-list-item">Badminton</a>
+            </li>
+            <li>
+              <a href="/HTML/billiards.html" class="drop-down-list-item">Billiards</a>
+            </li>
+            <li><a href="/HTML/chess.html" class="drop-down-list-item">Chess</a></li>
+            <li><a href="/HTML/football.html" class="drop-down-list-item">Football</a></li>
+            <li><a href="/HTML/golf.html" class="drop-down-list-item">Golf</a></li>
+            <li><a href="/HTML/judo.html" class="drop-down-list-item">Judo</a></li>
+            <li>
+              <a href="/HTML/motorcycle.html" class="drop-down-list-item">Motorcycle Racing</a>
+            </li>
+            <li><a href="/HTML/swimming.html" class="drop-down-list-item">Swimming</a></li>
+            <li><a href="/HTML/tennis.html" class="drop-down-list-item">Tennis</a></li>
+            <li>
+              <a href="/HTML/volley.html" class="drop-down-list-item">Volleyball</a>
+            </li>
+          </ul>
+        </li>
+        <li class="drop-btn" id="options">More
+          <img src="/Assets/Images/chevron-down-solid.svg" alt="down arrow" class="drop-down-logo">
+          <ul class="drop-down-list" id="options-catagories">
+            <li><a href="/HTML/contact.html" class="drop-down-list-item">Contact us</a></li>
+            <li><a href="/HTML/about.html" class="drop-down-list-item">About us</a></li>
+            <!-- <li><a href="/HTML/write.html" class="drop-down-list-item">Write for us</a></li> -->
+          </ul>
+        </li>
+        <li class="sign-up"><a href="/HTML/signup.html" class="" target="_blank">Sign Up</a></li>
+      </ul>
+    </div>
+    <!-- navbar ends here -->
+    <main class="min-h-screen main-area grid">
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">1 / 3</div> -->
+          <img src="/Assets/Images/bicycleracingHR-unsplash.jpg" style="width:100%">
+          <!-- <div class="text">Caption Text</div> -->
+        </div>
+
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">2 / 3</div> -->
+          <img src="/Assets/Images/baseballstadiumHR-unsplash.jpg" style="width:100%">
+          <!-- <div class="text">Caption Two</div> -->
+        </div>
+
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">3 / 3</div> -->
+          <img src="/Assets/Images/basketballHR-unsplash.jpg" style="width:100%">
+          <!-- <div class="text">Caption Three</div> -->
+        </div>
+
+      </div>
+      <div class="hero-para-container">
+        <div class="hero-para-1-container mx-auto txt-center hero-paras">
+          <p class="hero-para-1">
+            EXPLORE A WORLD OF SPORTS KNOWLEDGE AND DISCOVER EVERYTHING YOU
+            WANT TO KNOW ABOUT YOUR FAVORITE SPORT.
+          </p>
+        </div>
+      </div>
+      <div class="hero-para-container">
+        <div class="hero-para-2-container mx-auto txt-center hero-paras">
+          <p class="hero-para-2">
+            Our website is your go-to destination for all things
+            sports-related. Whether you're a die-hard fan or just getting
+            started, we've got you covered. From in-depth articles and
+            analysis to live scores and player profiles, our goal is to
+            provide you with the most comprehensive and up-to-date information
+            about various sports.
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-para-container">
+        <div class="hero-para-3-container mx-auto txt-center hero-paras">
+          <p class="hero-para-3">
+            With our user-friendly interface and intuitive navigation, you'll
+            have no trouble finding the information you're looking for. We've
+            organized our content into different categories to make it easier
+            for you to explore. Whether you're interested in team sports,
+            individual sports, or popular sports, you'll find everything you
+            need right here.
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-para-container">
+        <div class="hero-para-4-container mx-auto txt-center hero-paras">
+          <p class="hero-para-4">
+            So go ahead, dive in, and immerse yourself in the world of sports.
+            Whether you're looking for the latest news, historical facts, or
+            tips and tricks to improve your game, our website has it all. Get
+            ready to embark on an exciting journey of sports discovery!
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>Copyright&copy; Sportsinfo.com | All rights reserved</footer>
+  </div>
+  <script src="/JavaScript/slider.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports Info</title>
+    <link rel="stylesheet" href="/CSS/utilities.css" />
+    <link rel="stylesheet" href="/CSS/navbar.css" />
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <link rel="stylesheet" href="/CSS/slider.css" />
+    <link rel="stylesheet" href="/CSS/searchbar.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/JavaScript/main.js"></script>
+    <script src="/JavaScript/searchbar.js"></script>
+    <style>
+      .container {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+      }
+
+      .sign-up-main h1 {
+        color: #333;
+        padding: 20px;
+      }
+
+      .sign-up-main p {
+        color: #666;
+        margin-bottom: 10px;
+        pad: 10px;
+      }
+
+      .sign-up-main p a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mx-auto">
+      <!-- navbar starts here -->
+      <div class="navbar flex justify-between item-center">
+        <!-- navbar is divided into 3 parts logo, search bar, sports + login/signup  -->
+        <!-- logo-container -->
+        <div class="logo-container flex navbar-item">
+          <h1 class=""><a href="/HTML/index.html">Sports Info</a></h1>
+          <img
+            src="/Assets/Images/bars-solid.svg"
+            alt=""
+            class="collapse menu-icon"
+          />
+        </div>
+        <!-- search-bar-container -->
+        <div
+          class="search-bar-container flex-col item-center navbar-item collapsed"
+        >
+          <div class="searchBar flex">
+            <input
+              class="mx-auto"
+              type="search"
+              id="search-bar"
+              onkeyup="myFunction()"
+              placeholder="   search any sport here"
+            />
+            <button id="search-button">
+              <img
+                src="/Assets/Images/magnifying-glass-solid.svg"
+                alt="search icon"
+                class="search-icon"
+              />
+            </button>
+          </div>
+          <ul class="drop-down-lists" id="search-list">
+            <li>
+              <a
+                href="/HTML/athletics.html"
+                class="drop-down-list-item search-list-item"
+                >Athletics</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/badminton.html"
+                class="drop-down-list-item search-list-item"
+                >Badminton</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/billiards.html"
+                class="drop-down-list-item search-list-item"
+                >Billiards</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/chess.html"
+                class="drop-down-list-item search-list-item"
+                >Chess</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/football.html"
+                class="drop-down-list-item search-list-item"
+                >Football</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/golf.html"
+                class="drop-down-list-item search-list-item"
+                >Golf</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/judo.html"
+                class="drop-down-list-item search-list-item"
+                >Judo</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/motorcycle.html"
+                class="drop-down-list-item search-list-item"
+                >Motorcycle Racing</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/swimming.html"
+                class="drop-down-list-item search-list-item"
+                >Swimming</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/tennis.html"
+                class="drop-down-list-item search-list-item"
+                >Tennis</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/volley.html"
+                class="drop-down-list-item search-list-item"
+                >Volleyball</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- options-container -->
+        <ul class="flex navbar-item item-center collapsed drop-down-container">
+          <li class="drop-btn" id="sports">
+            Sports
+            <img
+              src="/Assets/Images/chevron-down-solid.svg"
+              alt="drop-down-logo"
+              class="drop-down-logo"
+            />
+            <ul
+              class="drop-down-list txt-center item-center mx-auto"
+              id="sports-catagories"
+            >
+              <li>
+                <a href="/HTML/athletics.html" class="drop-down-list-item"
+                  >Athletics</a
+                >
+              </li>
+              <li>
+                <a href="/HTML/badminton.html" class="drop-down-list-item"
+                  >Badminton</a
+                >
+              </li>
+              <li>
+                <a href="/HTML/billiards.html" class="drop-down-list-item"
+                  >Billiards</a
+                >
+              </li>
+              <li>
+                <a href="/HTML/chess.html" class="drop-down-list-item">Chess</a>
+              </li>
+              <li>
+                <a href="/HTML/football.html" class="drop-down-list-item"
+                  >Football</a
+                >
+              </li>
+              <li>
+                <a href="/HTML/golf.html" class="drop-down-list-item">Golf</a>
+              </li>
+              <li>
+                <a href="/HTML/judo.html" class="drop-down-list-item">Judo</a>
+              </li>
+              <li>
+                <a href="/HTML/motorcycle.html" class="drop-down-list-item"
+                  >Motorcycle Racing</a
+                >
+              </li>
+              <li>
+                <a href="/HTML/swimming.html" class="drop-down-list-item"
+                  >Swimming</a
+                >
+              </li>
+              <li>
+                <a href="/HTML/tennis.html" class="drop-down-list-item"
+                  >Tennis</a
+                >
+              </li>
+              <li>
+                <a href="/HTML/volley.html" class="drop-down-list-item"
+                  >Volleyball</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="drop-btn" id="options">
+            More
+            <img
+              src="/Assets/Images/chevron-down-solid.svg"
+              alt="down arrow"
+              class="drop-down-logo"
+            />
+            <ul class="drop-down-list" id="options-catagories">
+              <li>
+                <a href="/HTML/contact.html" class="drop-down-list-item"
+                  >Contact us</a
+                >
+              </li>
+              <li>
+                <a href="/HTML/about.html" class="drop-down-list-item"
+                  >About us</a
+                >
+              </li>
+              <!-- <li><a href="/HTML/write.html" class="drop-down-list-item">Write for us</a></li> -->
+            </ul>
+          </li>
+          <li class="sign-up">
+            <a href="/HTML/signup.html" class="" target="_blank">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+      <!-- navbar ends here -->
+      <main class="min-h-screen main-area grid">
+        <div class="container sign-up-main">
+          <h1>Contact Us</h1>
+          <p>Company Address:</p>
+          <p>Shahra-e-faisal, Karachi, Pakistan</p>
+          <p>Email: <a href="#" id="emailLink">sportsinfo@outlook.com</a></p>
+        </div>
+      </main>
+      <footer>Copyright&copy; Sportsinfo.com | All rights reserved</footer>
+    </div>
+
+    <script src="/JavaScript/script.js"></script>
+  </body>
+</html>

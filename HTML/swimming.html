@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swimming</title>
+  <link rel="stylesheet" href="/CSS/utilities.css" />
+  <link rel="stylesheet" href="/CSS/navbar.css" />
+  <link rel="stylesheet" href="/CSS/info.css" />
+  <link rel="stylesheet" href="/CSS/searchbar.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="/JavaScript/main.js"></script>
+  <script src="/JavaScript/searchbar.js"></script>
+</head>
+
+<body>
+  <div class="container mx-auto">
+    <!-- navbar starts here -->
+    <div class="navbar flex justify-between item-center">
+      <!-- navbar is divided into 3 parts logo, search bar, sports + login/signup  -->
+      <!-- logo-container -->
+      <div class="logo-container flex navbar-item">
+        <h1 class=""><a href="/HTML/index.html">Sports Info</a></h1>
+        <img src="/Assets/Images/bars-solid.svg" alt="" class="collapse menu-icon" />
+      </div>
+      <!-- search-bar-container -->
+      <div class="search-bar-container flex-col item-center navbar-item collapsed">
+        <div class="searchBar flex">
+          <input class="mx-auto" type="search" id="search-bar" onkeyup="myFunction()"
+            placeholder="   search any sport here" />
+          <button id="search-button"><img src="/Assets/Images/magnifying-glass-solid.svg" alt="search icon"
+              class="search-icon"></button>
+        </div>
+        <ul class="drop-down-lists" id="search-list">
+          <li><a href="/HTML/athletics.html" class="drop-down-list-item search-list-item">Athletics</a></li>
+          <li><a href="/HTML/badminton.html" class="drop-down-list-item search-list-item">Badminton</a></li>
+          <li><a href="/HTML/billiards.html" class="drop-down-list-item search-list-item">Billiards</a></li>
+          <li><a href="/HTML/chess.html" class="drop-down-list-item search-list-item">Chess</a></li>
+          <li><a href="/HTML/football.html" class="drop-down-list-item search-list-item">Football</a></li>
+          <li><a href="/HTML/golf.html" class="drop-down-list-item search-list-item">Golf</a></li>
+          <li><a href="/HTML/judo.html" class="drop-down-list-item search-list-item">Judo</a></li>
+          <li><a href="/HTML/motorcycle.html" class="drop-down-list-item search-list-item">Motorcycle Racing</a></li>
+          <li><a href="/HTML/swimming.html" class="drop-down-list-item search-list-item">Swimming</a></li>
+          <li><a href="/HTML/tennis.html" class="drop-down-list-item search-list-item">Tennis</a></li>
+          <li><a href="/HTML/volley.html" class="drop-down-list-item search-list-item">Volleyball</a></li>
+        </ul>
+      </div>
+      <!-- options-container -->
+      <ul class="flex navbar-item item-center collapsed drop-down-container">
+        <li class="drop-btn" id="sports">
+          Sports
+          <img src="/Assets/Images/chevron-down-solid.svg" alt="drop-down-logo" class="drop-down-logo" />
+          <ul class="drop-down-list txt-center item-center mx-auto" id="sports-catagories">
+            <li>
+              <a href="/HTML/athletics.html" class="drop-down-list-item">Athletics</a>
+            </li>
+            <li>
+              <a href="/HTML/badminton.html" class="drop-down-list-item">Badminton</a>
+            </li>
+            <li>
+              <a href="/HTML/billiards.html" class="drop-down-list-item">Billiards</a>
+            </li>
+            <li><a href="/HTML/chess.html" class="drop-down-list-item">Chess</a></li>
+            <li><a href="/HTML/football.html" class="drop-down-list-item">Football</a></li>
+            <li><a href="/HTML/golf.html" class="drop-down-list-item">Golf</a></li>
+            <li><a href="/HTML/judo.html" class="drop-down-list-item">Judo</a></li>
+            <li>
+              <a href="/HTML/motorcycle.html" class="drop-down-list-item">Motorcycle Racing</a>
+            </li>
+            <li><a href="/HTML/swimming.html" class="drop-down-list-item">Swimming</a></li>
+            <li><a href="/HTML/tennis.html" class="drop-down-list-item">Tennis</a></li>
+            <li>
+              <a href="/HTML/volley.html" class="drop-down-list-item">Volleyball</a>
+            </li>
+          </ul>
+        </li>
+        <li class="drop-btn" id="options">More
+          <img src="/Assets/Images/chevron-down-solid.svg" alt="down arrow" class="drop-down-logo">
+          <ul class="drop-down-list" id="options-catagories">
+            <li><a href="/HTML/contact.html" class="drop-down-list-item">Contact us</a></li>
+            <li><a href="/HTML/about.html" class="drop-down-list-item">About us</a></li>
+          </ul>
+        </li>
+        <li class="sign-up"><a href="/HTML/signup.html" class="" target="_blank">Sign Up</a></li>
+      </ul>
+    </div>
+    <main class="txt-center">
+      <div class="main-paragraph-container">
+        <h1 class="main-heading">Swimming</h1>
+        <p class="intro-paragraph">
+          Swimming is a racing sport that can be played in solo and team sports. To go through the water, one must use
+          their full body. The sport is performed in open water, such as lakes and oceans, or in pools. One of the most
+          popular Olympic sports is competitive swimming, which comprises a variety of distance events in the butterfly,
+          backstroke, breaststroke, freestyle, and individual medley. There's also the potential of four-swimmer
+          freestyle or medley relays in addition to these individual events. Four swimmers who alternate between the
+          backstroke, breaststroke, butterfly, and freestyle strokes make up a medley relay.
+        </p>
+      </div>
+      <!--Insert slider/carousal here-->
+      <div class="paragraph-container">
+        <h3 class="sub-heading">History:</h3>
+        <p class="paragraph">
+          There is proof that people swam for amusement in prehistoric periods; the earliest examples are drawings from
+          the Stone Age, which date back about 10,000 years. Records in writing date back to 2000 BC. Some of the
+          earliest references to swimming can be found in the Bible, the Iliad, the Odyssey, Beowulf, the Quran, and
+          other ancient writings. The German-Swiss professor of languages Nikolaus Wynmann wrote the first comprehensive
+          treatise about swimming in 1538. Colymbetes, sive de arte Natandi conversation et festivus et fundus lecture
+          is the title of the book, which is subtitled Joyful and Pleasant to Read or The Swimmer, or A Conversation on
+          the Art of Swimming.
+          <br>
+          In the 1830s, swimming gained popularity in England as a competitive recreational sport. In 1828, St George's
+          Baths opened as the world's first indoor swimming pool. By 1837, the National Swimming Society was holding
+          regular swimming competitions and six artificial swimming pools had been built throughout London.
+          As the pastime gained popularity, more than 300 regional clubs were operating nationwide by the time the
+          Amateur Swimming Association, the nation's first national governing body, was established in 1880.
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Rules of the game:</h3>
+        <p class="paragraph">
+          Around the world, swimming is a popular sport and leisure activity for people of all ages. To ensure safety
+          and equity, a variety of rules and criteria apply to swimming contests and practices. The following are some
+          basic swimming guidelines:
+        <ul class="list-container">
+          <li class="list">
+            <h4>Stroke rules:</h4>
+            <p>
+              Freestyle, backstroke, breaststroke, and butterfly are among the strokes used in competitive swimming.
+              There are particular guidelines for arm movements, leg kicks, breathing patterns, and techniques for each
+              stroke.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Starts and Turns:</h4>
+            <p>
+              Competitor swimming depends heavily on proper starts and turns. To avoid being disqualified, swimmers must
+              follow certain rules make legal turns, and start from the starting blocks during competitions.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Pool length:</h4>
+            <p>
+              Events involving competitive swimming usually happen in pools that are either 25 meters or 50 meters long.
+              Depending on the event, the proper pool length must be used for every competition.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Lane Etiquette:</h4>
+            <p>
+              Lane etiquette is something that swimmers need to follow in both training and competition. This entails
+              remaining in their designated lanes, letting go of swimmers who move more quickly, and refraining from
+              interfering with other swimmers.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Equipment Regulations:</h4>
+            <p>
+              Generally speaking, swimmers are permitted to wear swimsuits, goggles, and swim caps while competing. But
+              there are rules about what kinds of swimsuits are acceptable for competition swimming, including
+              requirements for coverage, fabric, and design.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Disqualification:</h4>
+            <p>
+              A swimmer may be disqualified from competition for several offenses, such as illegal turns, incorrect
+              strokes, false starts, and interfering with other swimmers. Officials from the race choose who is
+              disqualified, and it can mean that the swimmer's time is void.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Doping regulations:</h4>
+            <p>
+              Doping Guidelines Strict anti-doping rules are in place for swimming, just like they are for other sports,
+              to stop the use of performance-enhancing drugs. To ensure fair competition, swimmers are tested for drugs
+              both nationally and internationally.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Safety precautions:</h4>
+            <p>
+              Swimming safety is very important, especially for younger or less experienced swimmers. To guarantee a
+              safe swimming environment and prevent accidents, pool rules must be followed, lifeguards must be on duty,
+              and supervision must be provided.
+            </p>
+          </li>
+        </ul>
+        <p class="paragraph">
+          Depending on the particular type of swimming event and the regulatory organization in charge of the
+          competition, these rules may change slightly. Officials, coaches, and swimmers must all be aware of the rules
+          and guidelines that apply to their particular level of competition and adhere to them.
+        </p>
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Players of the game:</h3>
+        <p class="paragraph">
+          Generally speaking, swimming is an individual sport, meaning that participation doesn't depend on the number
+          of players. Individual practice of strokes, endurance, and technique can be undertaken by swimmers. But
+          swimming can also entail team events, such as relays, in which a group of swimmers competes as a unit.
+          <br>
+          Teams competing in relay events typically have four swimmers who, depending on the type of relay, swim a
+          predetermined distance, such as 200 or 100 meters. In a relay race, four swimmers are needed in total.
+          <br>
+          Swimming does not have a minimum or maximum number of participants for specific races or practices. No set
+          minimum or maximum number of participants is required for swimming laps, timed trials, or different training
+          drills.
+          <br>
+          Here are some popular players:
+        <ul class="list-container">
+          <li class="list">
+            <h4><a href="" target="_blank">Michael Phelps:</a></h4>
+            <p> Michael Phelps Considered by many to be one of the greatest swimmers of all time, Michael Phelps set multiple world records and won an unprecedented 23 gold medals at the Olympics.</p>
+          </li>
+          <li class="list">
+            <h4><a href="" target="_blank">Katie Ledecky:</a></h4>
+            <p> 
+              Known for her dominance in freestyle events, Katie Ledecky has won multiple Olympic gold medals and holds several world records in distances ranging from 200 meters to 1500 meters.
+
+            </p>
+          </li>
+          <li class="list">
+            <h4><a href="" target="_blank">Caeleb Dressel:</a></h4>
+            <p> 
+              A versatile swimmer known for his speed and versatility, Caeleb Dressel has won multiple Olympic gold medals and holds several American and world records in sprint events
+            </p>
+          </li>
+          <li class="list">
+            <h4><a href="" target="_blank">Missy Franklin: </a></h4>
+            <p> 
+              During her career, Missy Franklin became known for her versatility and success in backstroke and freestyle events. She won multiple Olympic gold medals and set world records in the process.
+            </p>
+          </li>
+        </ul>
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Strategy of the game:</h3>
+        <p class="paragraph">
+          Strategic considerations in swimming vary greatly based on the type of race and individual strengths. Sprint races emphasize sheer speed and power, necessitating explosive launches, quick turnover rates, and precise corners. Shorter course swimmers, such as those competing in the 50- or 100-meter freestyle, frequently concentrate on sustaining maximum speed throughout, using effective stroke mechanics, and utilizing powerful underwater kicks and smooth turns. 
+          <br>
+          On the other hand, longer races, like the 400- or 800-meter freestyle, need a careful balancing act between endurance and pace. Early in the race, swimmers intentionally preserve energy, progressively picking up speed to ensure they have adequate reserves for a great finish. Mental readiness is critical at all lengths, and the ability to visualize, concentrate, and maintain confidence are critical components of successful race strategy execution.
+          <br>
+          The key to a successful swimming strategy is adaptability. Swimmers need to be aware of the conditions of the race, modifying their strategy according to elements like lane positioning, competitive dynamics, and weather and water temperature. In longer races, tactical maneuvers like leaping ahead or drafting behind rivals can be quite advantageous. A swimmer's strategy also heavily considers nutrition, hydration, and recovery; maintaining top performance requires appropriate pre-race increasing and post-race recovery regimes. Ultimately, to traverse the complexity of competition and achieve optimal performance in the water, swimming strategy combines physical conditioning, technical proficiency, mental toughness, and situational awareness. 
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Popular Match:</h3>
+        <p class="paragraph">
+          The men's 4x100m freestyle relay at the 2008 Beijing Olympics is among the most recognizable and unforgettable swimming events in recent memory. World-class swimmers from the United States and France competed in the race, setting up an exciting matchup. In the competition, the American squad, led by the renowned Michael Phelps, sought to retain their Olympic championship. Still, the Alain Bernard-led French squad had become serious challengers. The lead changed hands several times during the race, and the relay's legs all put on thrilling displays. Jason Lezak, swimming the anchor leg for the United States, made a stunning return in the last few meters, passing Bernard with a remarkable burst of speed. Lezak's momentous swim. Lezak's remarkable swim not only gave the US the gold medal but also created a new global record, making the race one of the most exciting and memorable in Olympic swimming history.
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">How many countries play the game:</h3>
+        <p class="paragraph">: People from all over the world love swimming as a recreational activity and a popular sport. International bodies like FINA (Fédération Internationale de Natation), which is in charge of worldwide swimming contests like the Olympic Games and World Championships, regulate competitive swimming.
+          Regarding involvement, there are active swimming communities, training centers, and competitive swimming programs in many different countries. Swimming is a popular activity throughout the world, with participants hailing from the US, Australia, Europe, Asia, Africa, and South America, as well as from places like Russia, Hungary, and Great Britain.          
+        </p>
+      </div>
+      <div class="paragraph-container">
+        <h3 class="sub-heading">Important Facts:</h3>
+        <p class="paragraph">Here are some important facts about swimming:
+        <ul class="list-container">
+          <li class="list">
+            <h4>Physical benefits</h4>
+            <p>
+              Swimming works the entire body and is a very healthy type of exercise. It develops flexibility, strengthens and extends muscles, improves cardiovascular health, and encourages weight loss and general fitness.
+              <br>
+              Low impact: Since swimming is a low-impact activity, people of all ages and fitness levels can benefit from it. Compared to high-impact exercises like weightlifting or jogging, it puts less strain on the joints and muscles, which makes it a great option for injury prevention and recovery.              
+            </p>
+          </li>
+          <li class="list">
+            <h4>Safety:</h4>
+            <p>
+              A vital life skill that can save lives is learning to swim. It lowers the chance of drowning and raises awareness of water safety, particularly among young people and those who spend a lot of time near bodies of water.
+
+            </p>
+          </li>
+          <li class="list">
+            <h4>Accessible:</h4>
+            <p>
+              Swimming is a universal sport that may be done in a variety of locations, such as lakes, pools, rivers, and oceans. People can swim for fun, fitness, and competition at public pools, community centers, and natural bodies of water.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Competitive sport: </h4>
+            <p>
+              Competing in swimming is a prominent sport on the national and international scene. Athletes compete for medals and records in a variety of swimming categories at the Olympics, including freestyle, backstroke, breaststroke, butterfly, and individual medley.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Records and Achievements: </h4>
+            <p>
+              In the sport of swimming, swimmers have accomplished incredible exploits and broken many records. Athletes throughout the world have been inspired by legendary swimmers like Ian Thorpe, Katie Ledecky, and Michael Phelps, who have set world records and won numerous gold medals at the Olympics.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Therapeutic Benefits: </h4>
+            <p>
+              For those with injuries, chronic illnesses, or physical impairments, swimming can be soothing. Aquatic treatment, also referred to as water-based therapy, can increase general well-being, lessen discomfort, and increase mobility.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Community and recreation: </h4>
+            <p>
+              Participant camaraderie and sense of community are enhanced by swimming. People who love swimming together often become friends, whether they are swimming laps for fitness, competing in recreational events, or joining a swim team.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Environment and awareness:</h4>
+            <p>
+              In order to protect natural water habitats and guarantee water quality for future generations, swimming encourages environmental awareness and conservation initiatives. The goal of advocacy groups is to stop pollution, overfishing, and habitat degradation from harming lakes, rivers, and oceans.
+            </p>
+          </li>
+          <li class="list">
+            <h4>Lifelong activity:</h4>
+            <p>
+              Swimming is an activity that you can enjoy from infancy through adulthood and old age. It is a rewarding and pleasurable hobby for people of all ages because it provides mental and emotional benefits like stress alleviation, relaxation, and mood enhancement.
+            </p>
+          </li>
+        </ul>
+        </p>
+      </div>
+    </main>
+    <footer>Copyright&copy; Sportsinfo.com | All rights reserved</footer>
+  </div>
+</body>
+
+</html>

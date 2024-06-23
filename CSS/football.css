@@ -1,0 +1,13 @@
+body {
+    background-image: url(/Assets/Images/vectorstock_43006468/vectorstock_43006468.svg);
+    background-size: contain;
+}
+
+#football-logo {
+    width: 128px;
+    height: 128px;
+}
+
+.main-heading, #football-logo {
+    display: inline;
+}

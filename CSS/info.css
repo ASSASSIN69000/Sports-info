@@ -1,0 +1,111 @@
+:root {
+    /*light color themes*/
+    --light-clr-1: #ebf3fa;
+    --light-clr-2: #e2edf7;
+    --light-clr-3: #e7f0f9;
+    --light-clr-4: #ddeaf6;
+    /* dark color themes*/
+    --dark-clr-1: #525a61;
+    --dark-clr-2: #3e4348;
+    --dark-clr-3: #292d30;
+    --dark-clr-4: #141618;
+    /*fonts roberto sans-serif and mono-space*/
+    --rob-s-serif: "Roboto", sans-serif; /* this will be for headings and links or any oher kind of text except for paragrapgh*/
+    --rob-mono: "Roboto Mono", monospace; /* this will be for paragraphs */
+  }
+
+main {
+    /* border: 1px solid #888; */
+    line-height: 1.5;
+    border-radius: 20px;
+    font-weight: 500;
+    color: var(--dark-clr-4);
+}
+
+.main-paragraph-container {
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #666;
+    box-shadow: 2px 4px 3px #a6b5c3;
+}
+
+.main-paragraph-container:hover {
+    padding: 21px 20px;
+    box-shadow: 4px 5px 4px #a6b5c3;
+    background-color: var(--light-clr-2);
+    color: var(--dark-clr-4);
+    transform: translate(0, -2px);
+}
+.main-heading {
+    text-decoration: underline;
+    font-family: var(--rob-mono);
+}
+
+.intro-paragraph {
+    line-height: 2.5;
+    font-weight: 600;
+    color: var(--dark-clr-3);
+    font-family: var(--rob-s-serif);
+}
+
+.paragraph-container {
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #666;
+    box-shadow: 2px 4px 3px #a6b5c3;
+}
+
+.paragraph-container:hover {
+    box-shadow: 4px 5px 4px #a6b5c3;
+    background-color: var(--light-clr-2);
+    color: var(--dark-clr-4);
+    transform: translate(0, -2px);
+}
+
+.sub-heading {
+    text-align: left;
+    font-family: var(--rob-mono);
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    font-family: var(--rob-s-serif);
+    text-align: justify;
+    line-height: 2;
+}
+
+.list-container {
+    margin-left: 20px;
+    width: 80%;
+    line-height: 2;
+}
+
+.list {
+    padding: 0 10px;
+    list-style-type: square !important;
+    text-align: left;
+}
+
+.list h4 {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.list-within-list-container {
+    margin-left: 15px;
+}
+
+.list-within-list {
+    list-style-type: disc;
+
+}
+
+.list a:hover {
+    padding: 3px;
+    text-decoration: underline;
+    background-color: #d0e2f4;
+}
